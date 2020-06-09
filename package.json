@@ -10,11 +10,13 @@
     "@gridsome/source-contentful": "^0.5.2",
     "@gridsome/transformer-remark": "^0.6.0",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-pwa": "^0.0.17",
     "sharp": "^0.25.3",
     "tailwindcss": "^1.4.6"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
+    "gridsome-plugin-manifest": "^0.3.5",
     "node-sass": "^4.14.1",
     "sass-loader": "^8.0.2"
   }
