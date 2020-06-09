@@ -14,6 +14,7 @@ if (process.env.NODE_ENV === 'production')
 
 module.exports = {
   siteName: 'Gridsome',
+  host: '192.168.0.6',
   plugins: [
     {
       use: '@gridsome/source-contentful',
@@ -28,11 +29,11 @@ module.exports = {
     {
       use: 'gridsome-plugin-manifest',
       options: {
-        background_color: '##000810',
+        background_color: '#000810',
         icon_path: './src/favicon.png',
         name: 'NavaneethVijay',
         short_name: 'NavaneethVijay',
-        theme_color: '#961029',
+        theme_color: '#000810',
         lang: 'en',
       },
     },
@@ -49,10 +50,10 @@ module.exports = {
         cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
         shortName: 'NavaneethVijay',
         themeColor: '#666600',
-        backgroundColor: '#ffffff',
+        backgroundColor: '#000810',
         icon: 'src/favicon.png', // must be provided like 'src/favicon.png'
         msTileImage: '',
-        msTileColor: '#666600',
+        msTileColor: '#000810',
       },
     },
   ],

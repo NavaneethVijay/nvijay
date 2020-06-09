@@ -15,6 +15,6 @@ query {
 body {
   background: url('/bgpattern.svg');
   color: #fff;
-  background-size: 100%;
+  background-size: cover;
 }
 </style>
