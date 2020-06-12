@@ -14,18 +14,7 @@ if (process.env.NODE_ENV === 'production')
 
 module.exports = {
   siteName: 'Gridsome',
-  host: '192.168.0.6',
   plugins: [
-    {
-      use: '@gridsome/source-contentful',
-      options: {
-        space: process.env.CONTENTFUL_SPACE, // required
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, // required
-        host: 'cdn.contentful.com',
-        environment: 'master',
-        typeName: 'Contentful',
-      },
-    },
     {
       use: 'gridsome-plugin-manifest',
       options: {
