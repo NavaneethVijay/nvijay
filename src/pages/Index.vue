@@ -4,7 +4,9 @@
       class="flex min-h-screen items-center justify-left overflow-hidden relative p-4"
     >
       <div class="container p-4 md:p-0 mx-auto relative">
-        <div class="absolute text-gray-600 top-0 left-0 text-sm">
+        <div
+          class="absolute text-gray-600 top-0 left-0 text-sm italic font-mono"
+        >
           <span v-text="getHtml"> </span> <br />
           <span class="pl-6" v-text="getBody"> </span>
         </div>
@@ -27,15 +29,19 @@
                 <div class="text-bg-accent"></div>
               </div>
               <div class="my-12">
-                <h3 class=" text-lg md:text-2xl font-regular leading-snug">
+                <h3 class=" text-lg md:text-2xl font-regular leading-relaxed">
                   I'm a full stack web developer based on Bengaluru. I build
                   interactive websites that run across platforms & devices but
                   enough about me, how can I help you?
                 </h3>
+                <p class="mt-4 font-mono">
+                  Vuejs, Typescript, Magento 2, Laravel, MongoDb, TailwindCss,
+                  Nodejs...
+                </p>
                 <div class="mt-8">
                   <span class="font-medium py-1 border-gray-900 border-b-2 "
-                    ><a href="mailto:sainavaneeth@gmail.com"
-                      >sainavaneeth@gmail.com</a
+                    ><a href="mailto:sainavaneeth@gmail.com">
+                      sainavaneeth@gmail.com</a
                     ></span
                   >
                 </div>
@@ -55,7 +61,9 @@
               ></div>
             </div>
           </div>
-          <div class="absolute text-gray-600 bottom-0 left-0 text-sm">
+          <div
+            class="absolute text-gray-600 bottom-0 left-0 text-sm italic font-mono"
+          >
             <span class="pl-6" v-text="getBodyClsoe"> </span> <br />
             <span v-text="getHtmlClose"> </span>
           </div>
@@ -67,7 +75,7 @@
     </div>
     <div class="flex items-start latest-work-section overflow-hidden  relative">
       <div class="powers-img-backdrop-left"></div>
-      <div style="z-index: 1;" class="container mx-auto bg-white px-4 py-10">
+      <div style="z-index: 1;" class="container mx-auto bg-white px-6 py-10">
         <div class="py-10">
           <div class="flex items-center pt-10">
             <div class="">
@@ -75,21 +83,23 @@
                 Mutant Powers
               </h1>
             </div>
-            <div class="w-32 headling-line hero-side-bg mx-4 "></div>
+            <div
+              class="hidden md:block w-32 headling-line hero-side-bg mx-4 "
+            ></div>
           </div>
-          <h3 class="text-md md:text-2xl text-gray-800 font-regular ">
-            Experience and Skills
+          <h3 class="text-lg md:text-2xl text-gray-800 font-regular ">
+            Skills and Values
           </h3>
         </div>
-        <div class="py-10 flex flex-wrap">
+        <div class="md:py-10 flex flex-wrap">
           <div class="w-full md:w-1/2">
-            <ul class="text-xl ">
+            <ul class="list-disc pl-4">
               <li class="py-5">
                 <div>
                   <h3 class="font-semibold text-xl md:text-2xl">
                     User experience design (ux)
                   </h3>
-                  <h3 class="font-regular text-lg text-gray-600">
+                  <h3 class="font-regular text-md md:text-lg text-gray-600">
                     Delight the user and make it work.
                   </h3>
                 </div>
@@ -99,7 +109,7 @@
                   <h3 class="font-semibold text-xl md:text-2xl">
                     Web and user interface design
                   </h3>
-                  <h3 class="font-regular text-lg text-gray-600">
+                  <h3 class="font-regular text-md md:text-lg text-gray-600">
                     Websites, web experiences, ...
                   </h3>
                 </div>
@@ -107,13 +117,13 @@
             </ul>
           </div>
           <div class="w-full md:w-1/2">
-            <ul class="text-xl ">
+            <ul class="list-disc pl-4">
               <li class="py-5">
                 <div>
                   <h3 class="font-semibold text-xl md:text-2xl">
                     Good design is good business
                   </h3>
-                  <h3 class="font-regular text-lg text-gray-600">
+                  <h3 class="font-regular text-md md:text-lg text-gray-600">
                     It’s not only about beauty, it has to work.
                   </h3>
                 </div>
@@ -123,7 +133,7 @@
                   <h3 class="font-semibold text-xl md:text-2xl">
                     Keep it simple
                   </h3>
-                  <h3 class="font-regular text-lg text-gray-600">
+                  <h3 class="font-regular text-md md:text-lg text-gray-600">
                     Why make it complicated?
                   </h3>
                 </div>
@@ -134,10 +144,10 @@
       </div>
       <div class="powers-img-backdrop-right"></div>
     </div>
-    <div class="overflow-hidden relative">
+    <div class="overflow-hidden relative hidden">
       <div class="bg-purple-100 container mx-auto rounded-lg p-6">
         <div class="w-full">
-          <div class="pb-5">
+          <div class="md:pb-5">
             <div class="flex items-center pt-10">
               <div class="">
                 <h3 class="text-2xl sm:text-4xl font-semibold ">
@@ -158,15 +168,15 @@
       </div>
     </div>
     <div
-      class="flex min-h-screen items-center justify-left overflow-hidden relative p-4"
+      class="flex min-h-screen items-center justify-left overflow-hidden relative p-6"
     >
-      <div class="container mx-auto">
+      <div class="container mx-auto md:px-6">
         <div>
           <div class="py-10">
-            <div class="flex items-center pt-10">
+            <div class="flex items-center md:pt-10">
               <div class="">
-                <h1 class="text-2xl sm:text-4xl font-semibold ">
-                  My Work
+                <h1 class="text-3xl sm:text-4xl font-semibold ">
+                  Accomplished Projects
                 </h1>
               </div>
               <div class="w-32 headling-line hero-side-bg mx-4 "></div>
@@ -176,27 +186,31 @@
             </h3>
           </div>
           <div>
-            <div class="project-wrapper">
+            <div class="project-wrapper my-10">
               <div
-                class="project-item flex flex-wrap items-center bg-red-100 p-6 rounded-lg"
+                class="project-item flex flex-wrap items-center bg-orange-100 p-6 rounded-lg"
               >
-                <div class="w-full md:w-1/4">
+                <div class="w-full md:w-1/2">
                   <h3 class="text-2xl sm:text-4xl font-semibold ">
-                    Witless
+                    Witless Todo
                   </h3>
                   <h3 class=" text-lg md:text-xl font-regular leading-snug">
                     Whether you're planning a holiday, creating a shopping list
                     or managing multiple work projects.
                   </h3>
+                  <p class="mt-4 font-mono">
+                    Built using <span class="underline">NuxtJs</span>, Firebase
+                    auth, Firestore
+                  </p>
                   <div class="mt-8">
                     <a
                       href="https://witless.netlify.app/"
                       class="text-md font-medium text-gray-800 font-medium hover:underline"
-                      >Visit website →</a
+                      >View →</a
                     >
                   </div>
                 </div>
-                <div class="w-full md:w-3/4 p-6">
+                <div class="w-full md:w-1/2 p-6">
                   <img
                     class="mx-auto"
                     style="max-width: 500px; width: 100%"
@@ -205,6 +219,58 @@
                 </div>
               </div>
             </div>
+            <div class="project-wrapper my-10">
+              <div
+                class="project-item flex flex-wrap items-center bg-teal-100 p-6 rounded-lg"
+              >
+                <div class="w-full md:w-1/2">
+                  <h3 class="text-2xl sm:text-4xl font-semibold ">
+                    Shordyurl
+                  </h3>
+                  <h3 class=" text-lg md:text-xl font-regular leading-snug">
+                    Simple and fast URL shortener!
+                  </h3>
+                  <p class="mt-4 font-mono">
+                    Built using MongoDb, Expressjs, TailwindCss
+                  </p>
+                  <div class="mt-8">
+                    <a
+                      href="https://shordyurl.herokuapp.com/"
+                      class="text-md font-medium text-gray-800 font-medium hover:underline"
+                      >View →</a
+                    >
+                  </div>
+                </div>
+                <div class="w-full md:w-1/2 p-6">
+                  <img
+                    class="mx-auto"
+                    style="max-width: 500px; width: 100%"
+                    src="/witless.png"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex min-h-screen items-center justify-left overflow-hidden relative p-6"
+    >
+      <div class="container mx-auto md:px-6">
+        <div>
+          <div class="py-10">
+            <div class="flex items-center md:pt-10">
+              <div class="">
+                <h1 class="text-3xl sm:text-4xl font-semibold ">
+                  Experience
+                </h1>
+              </div>
+              <div class="w-32 headling-line hero-side-bg mx-4 "></div>
+            </div>
+            <h3 class="text-md md:text-2xl text-gray-800 font-regular ">
+              Open source enthusiast
+            </h3>
           </div>
         </div>
       </div>
