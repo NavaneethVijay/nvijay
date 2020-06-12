@@ -3,13 +3,13 @@
     <div
       class="flex min-h-screen items-center justify-left overflow-hidden relative"
     >
-      <div class="container mx-auto relative">
+      <div class="container p-4 md:p-0 mx-auto relative">
         <div class="absolute text-gray-600 top-0 left-0 text-sm">
           <span v-text="getHtml"> </span> <br />
           <span class="pl-6" v-text="getBody"> </span>
         </div>
         <div class="flex pb-20 flex-wrap md:flex-no-wrap items-stretch">
-          <div class="w-full md:w-3/5 relative h-inherit pt-20 pb-10 md:p-0">
+          <div class="w-full md:w-3/5 relative h-inherit md:pt-20 pb-10 md:p-0">
             <div
               class="w-fll md:w-3/4 flex flex-col h-full justify-center pt-10"
             >
@@ -65,7 +65,7 @@
         class="hidden md:block  hero-side-bg w-1/3 h-full absolute right-0 top-0"
       ></div>
     </div>
-    <div class="min-h-screen latest-work-section overflow-hidden p-6 relative">
+    <div class="min-h-screen latest-work-section overflow-hidden p-4 relative">
       <div class="container mx-auto">
         <div class="flex items-center py-10">
           <div class="px-4">
