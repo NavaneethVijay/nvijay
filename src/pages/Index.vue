@@ -1,18 +1,24 @@
 <template>
   <Layout>
     <div
-      class="flex min-h-screen items-center justify-left overflow-hidden p-6 relative"
+      class="flex min-h-screen items-center justify-left overflow-hidden relative"
     >
-      <div class="container mx-auto">
-        <div class="flex flex-wrap md:flex-no-wrap items-stretch">
-          <div class="w-full md:w-3/5 relative h-inherit py-20 md:p-0">
-            <div class="absolute text-gray-600 top-0 left-0 text-sm">
-              <span v-text="getHtml"> </span> <br />
-              <span class="pl-6" v-text="getBody"> </span>
-            </div>
-            <div class="w-fll md:w-3/4 flex flex-col h-full justify-center">
+      <div class="container mx-auto relative">
+        <div class="absolute text-gray-600 top-0 left-0 text-sm">
+          <span v-text="getHtml"> </span> <br />
+          <span class="pl-6" v-text="getBody"> </span>
+        </div>
+        <div class="flex pb-20 flex-wrap md:flex-no-wrap items-stretch">
+          <div class="w-full md:w-3/5 relative h-inherit pt-20 pb-10 md:p-0">
+            <div
+              class="w-fll md:w-3/4 flex flex-col h-full justify-center pt-10"
+            >
+              <img src="/waving.gif" style="opacity: 1;" class="image w-12" />
+              <h1 class=" text-3xl sm:text-5xl font-bold text-primary">
+                Hey There!
+              </h1>
               <h1 class=" text-3xl sm:text-5xl font-semibold ">
-                Navaneeth Vijay
+                I'm Navaneeth Vijay,
               </h1>
               <div class="bg-text-wrapper relative">
                 <h1 class=" text-3xl sm:text-5xl font-semibold ">
@@ -20,20 +26,23 @@
                 </h1>
                 <div class="text-bg-accent"></div>
               </div>
-              <div class="mt-4">
+              <div class="my-12">
                 <h3 class=" text-lg md:text-2xl font-regular leading-snug">
-                  Hi, my name is Navaneeth Vijay and I'm a full stack web
-                  developer based on Bengaluru. I build interactive websites
-                  that run across platforms & devices.
+                  I'm a full stack web developer based on Bengaluru. I build
+                  interactive websites that run across platforms & devices but
+                  enough about me, how can I help you?
                 </h3>
+                <div class="mt-8">
+                  <span class="font-medium py-1 border-gray-900 border-b-2"
+                    ><a href="mailto:sainavaneeth@gmail.com"
+                      >sainavaneeth@gmail.com</a
+                    ></span
+                  >
+                </div>
               </div>
             </div>
-            <div class="absolute text-gray-600 bottom-0 left-0 text-sm">
-              <span class="pl-6" v-text="getBody"> </span> <br />
-              <span v-text="getHtml"> </span>
-            </div>
           </div>
-          <div class="w-full md:w-2/5">
+          <div class="w-full md:w-2/5 pb-10">
             <div class="relative">
               <img
                 src="/navaneeth.jpeg"
@@ -46,11 +55,32 @@
               ></div>
             </div>
           </div>
+          <div class="absolute text-gray-600 bottom-0 left-0 text-sm">
+            <span class="pl-6" v-text="getBodyClsoe"> </span> <br />
+            <span v-text="getHtmlClose"> </span>
+          </div>
         </div>
       </div>
       <div
         class="hidden md:block  hero-side-bg w-1/3 h-full absolute right-0 top-0"
       ></div>
+    </div>
+    <div class="min-h-screen latest-work-section overflow-hidden p-6 relative">
+      <div class="container mx-auto">
+        <div class="flex items-center py-10">
+          <div class="px-4">
+            <h1 class="text-2xl sm:text-4xl font-semibold ">
+              Mutant Powers
+            </h1>
+            <h3 class="text-2xl text-gray-800 font-regular ">
+              Experience and Skills
+            </h3>
+          </div>
+          <div class="w-32 headling-line hero-side-bg "></div>
+        </div>
+
+        <div></div>
+      </div>
     </div>
   </Layout>
 </template>
@@ -67,10 +97,27 @@ export default {
     getBody() {
       return '<body>'
     },
+    getHtmlClose() {
+      return '</html>'
+    },
+    getBodyClsoe() {
+      return '</body>'
+    },
   },
 }
 </script>
 <style lang="scss">
+.latest-work-section {
+}
+.headling-line {
+  height: 3px;
+}
+.text-accent-color {
+  color: rgba(72, 48, 230, 0.1);
+}
+.text-accent-bg {
+  background-color: rgba(72, 48, 230, 0.1);
+}
 .text-bg-accent {
   position: absolute;
   bottom: 0px;
