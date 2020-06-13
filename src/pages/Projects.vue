@@ -10,7 +10,7 @@
           <span v-text="`&lt;html&gt;`"></span> <br />
           <span class="pl-6" v-text="`&lt;body&gt;`"> </span>
         </div>
-        <div>
+        <div class="py-8">
           <div class="py-10">
             <div class="flex items-center md:pt-10">
               <div class="">
@@ -20,11 +20,14 @@
                   </h1>
                   <div class="text-bg-accent"></div>
                 </div>
+                <h3 class="text-lg md:text-2xl text-gray-800 font-regular ">
+                  Open Source and client projects
+                </h3>
               </div>
             </div>
           </div>
           <div class="pb-20">
-            <div class="project-wrapper my-10">
+            <div class="project-wrapper my-5 md:my-10">
               <div class="pb-5 md:py-10">
                 <h3 class="text-2xl text-gray-800 font-semibold ">
                   Open source projects

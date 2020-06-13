@@ -1,13 +1,18 @@
 <template>
-  <div class="layout min-h-screen">
+  <div class="layout min-h-screen overflow-x-hidden">
     <div class="container mx-auto relative fixed top-0">
-      <header class="px-6 md:px-0 py-6 header flex justify-between w-full">
+      <header class="px-6 md:px-0 py-6 header flex justify-between w-full ">
         <div>
           <router-link class="font-medium text-xl" to="/">NV</router-link>
         </div>
-        <div class="menu-icon">
+        <span class="absolute text-sm clickhere pt-2 pr-6 md:pr-4 italic"
+          >Click here
+
+          <img class="ml-2 w-4 h-4" src="/increase.svg" />
+        </span>
+        <div class="menu-icon relative">
           <div
-            class="w-8 h-8 text-white cursor-pointer"
+            class="w-6 h-6 text-white cursor-pointer"
             @click="
               () => {
                 if (this.showMenu) {
@@ -25,6 +30,7 @@
               src="https://img.icons8.com/ios-glyphs/30/000000/multiply.png"
             />
             <svg
+              class="text-black"
               v-if="!showMenu"
               xmlns="http://www.w3.org/2000/svg"
               x="0px"
@@ -51,7 +57,7 @@
                 style="mix-blend-mode: normal"
               >
                 <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g fill="#fff">
+                <g fill="currentColor">
                   <path
                     d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"
                   ></path>
@@ -102,6 +108,38 @@
         <!-- the content -->
       </main>
     </transition>
+    <footer class="bg-gray-50 border-t py-5">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <div><span class="font-bold text-xl">Navaneeth Vijay</span></div>
+          <div>
+            <ul class="flex text-gray-900 text-lg font-mono">
+              <li class="pr-8">
+                <a
+                  class="hover:text-primary"
+                  href="https://instagram.com/navneeth_vijay"
+                  >Instagram</a
+                >
+              </li>
+              <li class="pr-8">
+                <a
+                  class="hover:text-primary"
+                  href="https://github.com/NavaneethVijay"
+                  >Github</a
+                >
+              </li>
+              <li class="pr-8">
+                <a
+                  class="hover:text-primary"
+                  href="https://twitter.com/navaneeth_V29"
+                  >Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </template>
 <script>
@@ -123,6 +161,14 @@ query {
 }
 </static-query>
 <style lang="scss">
+.clickhere {
+  top: 50px;
+  right: 0;
+  display: flex;
+  img {
+    //  / transform: rotate(-90deg);
+  }
+}
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
 .slide-fade-enter-active {
@@ -147,7 +193,7 @@ query {
   .menu-slide {
     transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
     animation-name: slideOut;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
     visibility: visible;
@@ -173,7 +219,7 @@ query {
 .showMenu {
   .menu-slide {
     animation-name: slideInto;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
     visibility: visible;

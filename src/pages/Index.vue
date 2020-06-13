@@ -35,12 +35,30 @@
                   enough about me, how can I help you?
                 </h3>
                 <ul class="flex text-gray-900 text-lg font-mono my-8">
-                  <li class="pr-8"><a href="#">Instagram</a></li>
-                  <li class="pr-8"><a href="#">Github</a></li>
-                  <li class="pr-8"><a href="#">Twitter</a></li>
+                  <li class="pr-8">
+                    <a
+                      class="hover:text-primary"
+                      href="https://instagram.com/navneeth_vijay"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="pr-8">
+                    <a
+                      class="hover:text-primary"
+                      href="https://github.com/NavaneethVijay"
+                      >Github</a
+                    >
+                  </li>
+                  <li class="pr-8">
+                    <a
+                      class="hover:text-primary"
+                      href="https://twitter.com/navaneeth_V29"
+                      >Twitter</a
+                    >
+                  </li>
                 </ul>
                 <div>
-                  <span class="font-medium py-1 border-gray-900 border-b-2 "
+                  <span class="font-medium py-1 border-gray-900 border-b "
                     ><a href="mailto:sainavaneeth@gmail.com">
                       sainavaneeth@gmail.com</a
                     ></span

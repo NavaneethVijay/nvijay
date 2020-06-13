@@ -38,13 +38,18 @@
                 Magento Frontend Developer </span
               >in Codilar Technologies Pvt. Ltd , in Bengaluru for 2 year and
               above with active contributations in development for more than 5
-              projects. While I binge watch tv series and play
+              projects.
+            </h3>
+            <h3 class="text-lg md:text-xl font-regular my-4">
+              While I binge watch tv series and play
               <span class="font-medium text-xl md:text-2xl"> Dota2</span> on a
               'normal' day, I also learned latest tools and technologies which
               allowed me to accomplish myself as a web developer along with
-              these following skills and values. I’m a fast learner, able to
-              pick up new skills and juggle different projects and roles with
-              relative ease.
+              these following skills and values.
+            </h3>
+            <h3 class="text-lg md:text-xl font-regular">
+              I’m a fast learner, able to pick up new skills and juggle
+              different projects and roles with relative ease.
             </h3>
             <div class="mt-8">
               <a
@@ -54,7 +59,10 @@
               >
             </div>
           </div>
-          <div class="py-10 flex flex-wrap">
+          <h3 class="text-3xl sm:text-4xl font-semibold mt-20">
+            Main Skills and Values
+          </h3>
+          <div class="pb-10 flex flex-wrap">
             <div class="w-full md:w-1/2">
               <ul class="list-disc pl-4">
                 <li class="py-5">
@@ -147,7 +155,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'About us',
+    title: 'Naveneeth Vijay | About',
   },
 }
 </script>
