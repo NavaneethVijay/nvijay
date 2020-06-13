@@ -1,7 +1,7 @@
 <template>
   <div class="layout min-h-screen">
     <div class="container mx-auto relative fixed top-0">
-      <header class="py-6 header flex justify-between w-full">
+      <header class="px-6 md:px-0 py-6 header flex justify-between w-full">
         <div>
           <router-link class="font-medium text-xl" to="/"
             >Navaneeth Vijay</router-link
@@ -9,7 +9,7 @@
         </div>
         <div class="menu-icon">
           <div
-            class="w-6 h-6 text-white bg-red-100 cursor-pointer"
+            class="w-6 h-6 text-white bg-purple-900 md:bg-purple-200 cursor-pointer"
             @click="showMenu = !showMenu"
           ></div>
         </div>
@@ -30,7 +30,7 @@
           class="h-screen overflow-hidden bg-white fixed top-0 w-full menu-slide flex items-center justify-center text-primary"
         >
           <div class="container mx-auto">
-            <ul class=" text-4xl my-8">
+            <ul class=" text-4xl my-8 flex flex-col items-center">
               <li class="pr-8 my-6">
                 <router-link to="/">Home</router-link>
               </li>
@@ -99,13 +99,13 @@ query {
     z-index: 2;
 
     &:nth-child(2) {
-      animation-delay: 0.5s;
-    }
-    &:nth-child(3) {
       animation-delay: 0.8s;
     }
+    &:nth-child(3) {
+      animation-delay: 1.2s;
+    }
     &:nth-child(4) {
-      animation-delay: 1s;
+      animation-delay: 1.5s;
     }
   }
 }

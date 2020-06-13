@@ -3,7 +3,7 @@
     <div
       class="flex min-h-screen items-center justify-left overflow-hidden relative p-6"
     >
-      <div class="container mx-auto md:px-6">
+      <div class="container mx-auto">
         <div>
           <div class="py-10">
             <div class="flex items-center md:pt-10">
