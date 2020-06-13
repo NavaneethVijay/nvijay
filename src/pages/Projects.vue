@@ -1,9 +1,15 @@
 <template>
   <Layout>
     <div
-      class="flex min-h-screen items-center justify-left overflow-hidden relative p-6"
+      class="flex min-h-screen items-center justify-left overflow-hidden relative py-10 p-6"
     >
-      <div class="container mx-auto">
+      <div class="container mx-auto mt-10  relative">
+        <div
+          class="absolute text-gray-600 top-0 left-0 text-sm italic font-mono"
+        >
+          <span v-text="`&lt;html&gt;`"></span> <br />
+          <span class="pl-6" v-text="`&lt;body&gt;`"> </span>
+        </div>
         <div>
           <div class="py-10">
             <div class="flex items-center md:pt-10">
@@ -16,12 +22,14 @@
                 </div>
               </div>
             </div>
-            <h3 class="text-md md:text-2xl text-gray-800 font-regular ">
-              Open source enthusiast
-            </h3>
           </div>
-          <div>
+          <div class="pb-20">
             <div class="project-wrapper my-10">
+              <div class="pb-5 md:py-10">
+                <h3 class="text-2xl text-gray-800 font-semibold ">
+                  Open source projects
+                </h3>
+              </div>
               <div
                 class="project-item flex flex-wrap items-center bg-orange-100 p-6 rounded-lg"
               >
@@ -41,7 +49,7 @@
                     <a
                       href="https://witless.netlify.app/"
                       class="text-md font-medium text-gray-800 font-medium hover:underline"
-                      >View →</a
+                      >https://witless.netlify.app/ →</a
                     >
                   </div>
                 </div>
@@ -72,7 +80,7 @@
                     <a
                       href="https://shordyurl.herokuapp.com/"
                       class="text-md font-medium text-gray-800 font-medium hover:underline"
-                      >View →</a
+                      >https://shordyurl.herokuapp.com/ →</a
                     >
                   </div>
                 </div>
@@ -86,6 +94,12 @@
               </div>
             </div>
           </div>
+        </div>
+        <div
+          class="absolute text-gray-600 bottom-0 left-0 text-sm italic font-mono"
+        >
+          <span class="pl-6" v-text="`&lt;/body&gt;`"> </span> <br />
+          <span v-text="`&lt;/html&gt;`"></span>
         </div>
       </div>
     </div>

@@ -51,15 +51,8 @@
           </div>
           <div class="w-full md:w-2/5 pb-10">
             <div class="relative">
-              <img
-                src="/navaneeth.jpeg"
-                class="hero-img"
-                style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"
-              />
-              <div
-                class="hero-img-backdrop"
-                style="transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d; opacity: 0.5;"
-              ></div>
+              <img src="/navaneeth.jpeg" class="hero-img" />
+              <div class="hero-img-backdrop"></div>
             </div>
           </div>
           <div

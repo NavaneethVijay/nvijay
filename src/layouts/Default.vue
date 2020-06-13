@@ -3,25 +3,72 @@
     <div class="container mx-auto relative fixed top-0">
       <header class="px-6 md:px-0 py-6 header flex justify-between w-full">
         <div>
-          <router-link class="font-medium text-xl" to="/"
-            >Navaneeth Vijay</router-link
-          >
+          <router-link class="font-medium text-xl" to="/">NV</router-link>
         </div>
         <div class="menu-icon">
           <div
-            class="w-6 h-6 text-white bg-purple-900 md:bg-purple-200 cursor-pointer"
-            @click="showMenu = !showMenu"
-          ></div>
+            class="w-8 h-8 text-white cursor-pointer"
+            @click="
+              () => {
+                if (this.showMenu) {
+                  this.closeMenu = true
+                  this.showMenu = false
+                } else {
+                  this.closeMenu = false
+                  this.showMenu = true
+                }
+              }
+            "
+          >
+            <img
+              v-if="showMenu"
+              src="https://img.icons8.com/ios-glyphs/30/000000/multiply.png"
+            />
+            <svg
+              v-if="!showMenu"
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="100%"
+              height="100%"
+              viewBox="0 0 172 172"
+              style=" fill:#000000;"
+            >
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal"
+              >
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#fff">
+                  <path
+                    d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
         </div>
       </header>
     </div>
-    <div v-if="showMenu">
-      <div :class="{ showMenu: showMenu }">
+    <div>
+      <div :class="{ showMenu: showMenu, hideMenu: closeMenu }">
         <div
           class="h-screen overflow-hidden bg-primary fixed top-0 w-full menu-slide"
         ></div>
         <div
-          class="h-screen overflow-hidden bg-indigo-900 fixed top-0 w-full menu-slide"
+          class="h-screen overflow-hidden bg-purple-200 fixed top-0 w-full menu-slide"
         ></div>
         <div
           class="h-screen overflow-hidden bg-purple-100 fixed top-0 w-full menu-slide"
@@ -30,7 +77,7 @@
           class="h-screen overflow-hidden bg-white fixed top-0 w-full menu-slide flex items-center justify-center text-primary"
         >
           <div class="container mx-auto">
-            <ul class=" text-4xl my-8 flex flex-col items-center">
+            <ul class=" text-4xl font-semibold my-8 flex flex-col items-center">
               <li class="pr-8 my-6">
                 <router-link to="/">Home</router-link>
               </li>
@@ -48,7 +95,13 @@
         </div>
       </div>
     </div>
-    <div><slot /></div>
+    <transition name="slide-fade" appear>
+      <main>
+        <!-- a wrapper for slot is needed -->
+        <slot />
+        <!-- the content -->
+      </main>
+    </transition>
   </div>
 </template>
 <script>
@@ -56,6 +109,7 @@ export default {
   data() {
     return {
       showMenu: false,
+      closeMenu: false,
     }
   },
 }
@@ -69,23 +123,52 @@ query {
 }
 </static-query>
 <style lang="scss">
-.fade-enter-active,
-.fade-leave-active {
-  transition-duration: 0.3s;
-  transition-property: opacity;
-  transition-timing-function: ease;
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all 0.6s ease;
 }
-
-.fade-enter,
-.fade-leave-active {
+.slide-fade-leave-active {
+  transition: all 1s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(10px);
   opacity: 0;
 }
 
 .menu-slide {
-  opacity: 0;
   visibility: hidden;
-  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  opacity: 0;
+  z-index: 2;
   transform: translateX(100%);
+}
+.hideMenu {
+  .menu-slide {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+    animation-name: slideOut;
+    animation-duration: 1s;
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+    visibility: visible;
+    transform: translateX(0);
+    opacity: 1;
+    z-index: 2;
+
+    &:nth-child(4) {
+      animation-delay: 0.5s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.8s;
+    }
+    &:nth-child(2) {
+      animation-delay: 1.2s;
+    }
+    &:nth-child(1) {
+      animation-delay: 1.5s;
+    }
+  }
 }
 .showMenu {
   .menu-slide {
@@ -93,10 +176,13 @@ query {
     animation-duration: 1s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
-    animation-direction: alternate;
     visibility: visible;
     opacity: 1;
     z-index: 2;
+
+    &:nth-child(1) {
+      animation-delay: 0.5s;
+    }
 
     &:nth-child(2) {
       animation-delay: 0.8s;
@@ -116,6 +202,14 @@ query {
   }
   to {
     transform: translateX(0);
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
 
