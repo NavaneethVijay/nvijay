@@ -1,0 +1,12 @@
+.menu-slide {
+  z-index: 2;
+  animation: slideInto;
+}
+@keyframes slideInto {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
