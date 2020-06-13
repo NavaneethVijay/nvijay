@@ -5,7 +5,9 @@
         <div>
           <router-link class="font-medium text-xl" to="/">NV</router-link>
         </div>
-        <span class="absolute text-sm clickhere pt-2 pr-6 md:pr-4 italic"
+        <span
+          v-if="!showMenu"
+          class="absolute text-sm clickhere pt-2 pr-6 md:pr-4 italic"
           >Click here
 
           <img class="ml-2 w-4 h-4" src="/increase.svg" />
@@ -110,10 +112,14 @@
     </transition>
     <footer class="bg-gray-50 border-t py-5">
       <div class="container mx-auto">
-        <div class="flex justify-between items-center">
-          <div><span class="font-bold text-xl">Navaneeth Vijay</span></div>
+        <div
+          class="flex flex-wrap justify-center md:justify-between items-center"
+        >
           <div>
-            <ul class="flex text-gray-900 text-lg font-mono">
+            <span class="font-bold text-lg md:text-xl">Navaneeth Vijay</span>
+          </div>
+          <div>
+            <ul class="flex text-gray-900 text-md md:text-lg font-mono mt-2">
               <li class="pr-8">
                 <a
                   class="hover:text-primary"
@@ -193,7 +199,7 @@ query {
   .menu-slide {
     transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
     animation-name: slideOut;
-    animation-duration: 0.8s;
+    animation-duration: 0.5s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
     visibility: visible;
