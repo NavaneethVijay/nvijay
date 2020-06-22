@@ -121,6 +121,30 @@ export default {
       closeMenu: false,
     }
   },
+
+  metaInfo: {
+    meta: [
+      {
+        property: 'og:title',
+        content:
+          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript',
+      },
+      {
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        property: 'og:site_name',
+        content:
+          'Front-End Developer, Bengaluru India. www.navaneethvijay.com.',
+      },
+      {
+        property: 'og:url',
+        content: 'www.navaneethvijay.com',
+      },
+    ],
+    // etc...
+  },
 }
 </script>
 

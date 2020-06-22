@@ -97,7 +97,15 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Navaneeth | Web developer',
+    title: 'Navaneeth Vijay | Web Developer',
+    meta: [
+      {
+        name: 'description',
+        content:
+          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript',
+      },
+      { name: 'author', content: 'Navaneeth Vijay' },
+    ],
   },
   computed: {
     getHtml() {
