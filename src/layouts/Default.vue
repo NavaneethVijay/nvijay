@@ -49,49 +49,19 @@
           <div class="container mx-auto">
             <ul class=" text-4xl font-semibold my-8 flex flex-col items-center">
               <li class="pr-8 my-6 overflow-hidden">
-                <router-link
-                  style="transition-delay: 1.9s; transition-duration: 1s"
-                  class="block transform translate-y-0 transition ease-in hover:underline"
-                  :class="{ 'translate-y-16': !showMenu }"
-                  to="/"
-                  >Home</router-link
-                >
+                <router-link to="/">Home</router-link>
               </li>
               <li class="pr-8 my-6 overflow-hidden">
-                <router-link
-                  style="transition-delay: 1.9s; transition-duration: 1s"
-                  class="block transform translate-y-0 transition ease-in hover:underline "
-                  :class="{ 'translate-y-16': !showMenu }"
-                  to="/about"
-                  >About Me</router-link
-                >
+                <router-link to="/about">About Me</router-link>
               </li>
               <li class="pr-8 my-6 overflow-hidden">
-                <router-link
-                  style="transition-delay: 1.9s; transition-duration: 1s"
-                  class="block transform translate-y-0 transition ease-in hover:underline"
-                  :class="{ 'translate-y-16': !showMenu }"
-                  to="/about"
-                  >Blog</router-link
-                >
+                <router-link to="/about">Blog</router-link>
               </li>
               <li class="pr-8 my-6 overflow-hidden">
-                <router-link
-                  style="transition-delay: 1.9s; transition-duration: 1s"
-                  class="block transform translate-y-0 transition ease-in hover:underline"
-                  :class="{ 'translate-y-16': !showMenu }"
-                  to="/projects"
-                  >Projects</router-link
-                >
+                <router-link to="/projects">Projects</router-link>
               </li>
               <li class="pr-8 my-6 overflow-hidden">
-                <router-link
-                  style="transition-delay: 1.9s; transition-duration: 1s"
-                  class="block transform translate-y-0 transition ease-in hover:underline"
-                  :class="{ 'translate-y-16': !showMenu }"
-                  to="/contact"
-                  >Contact</router-link
-                >
+                <router-link to="/contact">Contact</router-link>
               </li>
             </ul>
           </div>
