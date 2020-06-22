@@ -5,13 +5,7 @@
         <div>
           <router-link class="font-medium text-xl" to="/">NV</router-link>
         </div>
-        <span
-          v-if="!showMenu"
-          class="absolute text-sm clickhere pt-2 pr-6 md:pr-4 italic"
-          >Click here
 
-          <img class="ml-2 w-4 h-4" src="/increase.svg" />
-        </span>
         <div class="menu-icon relative">
           <div
             class="w-6 h-6 text-white cursor-pointer"
@@ -27,45 +21,13 @@
               }
             "
           >
-            <img
-              v-if="showMenu"
-              src="https://img.icons8.com/ios-glyphs/30/000000/multiply.png"
-            />
-            <svg
-              class="text-black"
-              v-if="!showMenu"
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="100%"
-              height="100%"
-              viewBox="0 0 172 172"
-              style=" fill:#000000;"
-            >
-              <g
-                fill="none"
-                fill-rule="nonzero"
-                stroke="none"
-                stroke-width="1"
-                stroke-linecap="butt"
-                stroke-linejoin="miter"
-                stroke-miterlimit="10"
-                stroke-dasharray=""
-                stroke-dashoffset="0"
-                font-family="none"
-                font-weight="none"
-                font-size="none"
-                text-anchor="none"
-                style="mix-blend-mode: normal"
-              >
-                <path d="M0,172v-172h172v172z" fill="none"></path>
-                <g fill="currentColor">
-                  <path
-                    d="M0,25.8v17.2h172v-17.2zM0,77.4v17.2h172v-17.2zM0,129v17.2h172v-17.2z"
-                  ></path>
-                </g>
-              </g>
-            </svg>
+            <div class="relative">
+              <div :class="{ active: showMenu }" class="menu js-menu">
+                <span class="menu__line"></span>
+                <span class="menu__line"></span>
+                <span class="menu__line"></span>
+              </div>
+            </div>
           </div>
         </div>
       </header>
@@ -167,6 +129,12 @@ query {
 }
 </static-query>
 <style lang="scss">
+$bg-color: #eee;
+$color-white: #fff;
+$color-black: #222;
+$color-purple-dark: #7f39fb;
+$color-purple-light: #dbb2ff;
+
 .clickhere {
   top: 50px;
   right: 0;
@@ -349,5 +317,52 @@ header {
   width: 30%;
   height: 30%;
   opacity: 0.3;
+}
+
+.menu {
+  display: block;
+  position: absolute;
+  background-color: #f2f2f2;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  z-index: 20;
+  cursor: pointer;
+  &__line {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 4px;
+    background-color: $color-black;
+    border-radius: 13px;
+    transition-duration: 2s;
+    transition-delay: 0.8s;
+    &:nth-child(1) {
+      top: 14px;
+    }
+    &:nth-child(2) {
+      top: 23px;
+    }
+    &:nth-child(3) {
+      bottom: 14px;
+    }
+  }
+  // hamburger menu transformation
+  &.active {
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+  }
+  &.active .menu__line:nth-child(1) {
+    transform: translate(-12px, 9px) rotate(-45deg);
+  }
+  &.active .menu__line:nth-child(2) {
+    transition-duration: 0s;
+    opacity: 0;
+  }
+  &.active .menu__line:nth-child(3) {
+    transform: translate(-12px, -9px) rotate(45deg);
+  }
 }
 </style>
