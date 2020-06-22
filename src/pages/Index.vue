@@ -32,7 +32,13 @@
                 <h3 class=" text-lg md:text-2xl font-regular leading-relaxed">
                   I'm a full stack web developer based in Bengaluru. I build
                   interactive websites that run across platforms & devices but
-                  enough about me, how can I help you?
+                  enough
+                  <router-link
+                    class="text-primary font-medium underline"
+                    to="/about"
+                    >about me</router-link
+                  >
+                  , how can I help you?
                 </h3>
                 <ul class="flex text-gray-900 text-lg font-mono my-8">
                   <li class="pr-8">

@@ -3,12 +3,12 @@
     <div class="container mx-auto relative fixed top-0">
       <header class="px-6 md:px-0 py-6 header flex justify-between w-full ">
         <div>
-          <router-link class="font-medium text-xl" to="/">NV</router-link>
+          <router-link class="font-bold text-xl" to="/">NV.</router-link>
         </div>
 
         <div class="menu-icon relative">
           <div
-            class="w-6 h-6 text-white cursor-pointer"
+            class="text-white cursor-pointer"
             @click="
               () => {
                 if (this.showMenu) {
@@ -21,7 +21,7 @@
               }
             "
           >
-            <div class="relative">
+            <div class="menu-main relative">
               <div :class="{ active: showMenu }" class="menu js-menu">
                 <span class="menu__line"></span>
                 <span class="menu__line"></span>
@@ -48,17 +48,50 @@
         >
           <div class="container mx-auto">
             <ul class=" text-4xl font-semibold my-8 flex flex-col items-center">
-              <li class="pr-8 my-6">
-                <router-link to="/">Home</router-link>
+              <li class="pr-8 my-6 overflow-hidden">
+                <router-link
+                  style="transition-delay: 1.9s; transition-duration: 1s"
+                  class="block transform translate-y-0 transition ease-in hover:underline"
+                  :class="{ 'translate-y-16': !showMenu }"
+                  to="/"
+                  >Home</router-link
+                >
               </li>
-              <li class="pr-8 my-6">
-                <router-link to="/about">About Me</router-link>
+              <li class="pr-8 my-6 overflow-hidden">
+                <router-link
+                  style="transition-delay: 1.9s; transition-duration: 1s"
+                  class="block transform translate-y-0 transition ease-in hover:underline "
+                  :class="{ 'translate-y-16': !showMenu }"
+                  to="/about"
+                  >About Me</router-link
+                >
               </li>
-              <li class="pr-8 my-6">
-                <router-link to="/projects">Projects</router-link>
+              <li class="pr-8 my-6 overflow-hidden">
+                <router-link
+                  style="transition-delay: 1.9s; transition-duration: 1s"
+                  class="block transform translate-y-0 transition ease-in hover:underline"
+                  :class="{ 'translate-y-16': !showMenu }"
+                  to="/about"
+                  >Blog</router-link
+                >
               </li>
-              <li class="pr-8 my-6">
-                <router-link to="/contact">Contact</router-link>
+              <li class="pr-8 my-6 overflow-hidden">
+                <router-link
+                  style="transition-delay: 1.9s; transition-duration: 1s"
+                  class="block transform translate-y-0 transition ease-in hover:underline"
+                  :class="{ 'translate-y-16': !showMenu }"
+                  to="/projects"
+                  >Projects</router-link
+                >
+              </li>
+              <li class="pr-8 my-6 overflow-hidden">
+                <router-link
+                  style="transition-delay: 1.9s; transition-duration: 1s"
+                  class="block transform translate-y-0 transition ease-in hover:underline"
+                  :class="{ 'translate-y-16': !showMenu }"
+                  to="/contact"
+                  >Contact</router-link
+                >
               </li>
             </ul>
           </div>
@@ -319,26 +352,39 @@ header {
   opacity: 0.3;
 }
 
+.menu-main {
+  height: 40px;
+  width: 40px;
+  @media (min-width: 1024px) {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 .menu {
   display: block;
-  position: absolute;
-  background-color: #f2f2f2;
-  height: 50px;
-  width: 50px;
+  background-color: #eceafc;
   border-radius: 50%;
   z-index: 20;
-  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  transition-delay: 0.8s;
   &__line {
     display: block;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 30px;
-    height: 4px;
     background-color: $color-black;
     border-radius: 13px;
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     transition-delay: 0.8s;
+    width: 25px;
+    height: 3px;
+    @media (min-width: 1024px) {
+      width: 30px;
+      height: 4px;
+    }
     &:nth-child(1) {
       top: 14px;
     }
@@ -351,7 +397,7 @@ header {
   }
   // hamburger menu transformation
   &.active {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: #fff;
     box-shadow: none;
   }
   &.active .menu__line:nth-child(1) {
