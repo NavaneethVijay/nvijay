@@ -55,7 +55,7 @@
                 <router-link to="/about">About Me</router-link>
               </li>
               <li class="pr-8 my-6 overflow-hidden">
-                <router-link to="/about">Blog</router-link>
+                <router-link to="/blog">Blog</router-link>
               </li>
               <li class="pr-8 my-6 overflow-hidden">
                 <router-link to="/projects">Projects</router-link>
@@ -220,7 +220,7 @@ $color-purple-light: #dbb2ff;
 .showMenu {
   .menu-slide {
     animation-name: slideInto;
-    animation-duration: 0.8s;
+    animation-duration: 0.6s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
     visibility: visible;
@@ -232,13 +232,13 @@ $color-purple-light: #dbb2ff;
     }
 
     &:nth-child(2) {
-      animation-delay: 0.8s;
+      animation-delay: 0.7s;
     }
     &:nth-child(3) {
       animation-delay: 1.2s;
     }
     &:nth-child(4) {
-      animation-delay: 1.5s;
+      animation-delay: 1.4s;
     }
   }
 }

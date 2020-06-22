@@ -13,16 +13,26 @@ if (process.env.NODE_ENV === 'production')
   postcssPlugins.push(purgecss(require('./purgecss.config.js')))
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'NavaneethVijay',
   plugins: [
+    {
+      use: '@gridsome/source-contentful',
+      options: {
+        space: process.env.CONTENTFUL_SPACE, // required
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, // required
+        host: 'cdn.contentful.com',
+        environment: 'master',
+        typeName: 'Contentful',
+      },
+    },
     {
       use: 'gridsome-plugin-manifest',
       options: {
-        background_color: '#000810',
+        background_color: '#fff',
         icon_path: './src/favicon.png',
         name: 'NavaneethVijay',
         short_name: 'NavaneethVijay',
-        theme_color: '#000810',
+        theme_color: '#fff',
         lang: 'en',
       },
     },
@@ -38,11 +48,11 @@ module.exports = {
         serviceWorkerPath: 'service-worker.js',
         cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
         shortName: 'NavaneethVijay',
-        themeColor: '#666600',
-        backgroundColor: '#000810',
+        themeColor: '#fff',
+        backgroundColor: '#fff',
         icon: 'src/favicon.png', // must be provided like 'src/favicon.png'
         msTileImage: '',
-        msTileColor: '#000810',
+        msTileColor: '#fff',
       },
     },
   ],
