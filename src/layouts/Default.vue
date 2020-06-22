@@ -337,7 +337,7 @@ header {
     height: 4px;
     background-color: $color-black;
     border-radius: 13px;
-    transition-duration: 2s;
+    transition-duration: 1s;
     transition-delay: 0.8s;
     &:nth-child(1) {
       top: 14px;
