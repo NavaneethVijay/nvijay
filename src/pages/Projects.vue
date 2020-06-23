@@ -11,7 +11,8 @@
           <span class="pl-6" v-text="`&lt;body&gt;`"> </span>
         </div>
         <div class="py-8">
-          <div class="py-10 px-4">
+          <div class="py-10 px-4 relative">
+            <div class="hidden md:block powers-img-backdrop-left"></div>
             <div class="flex items-center md:pt-10">
               <div>
                 <div class="bg-text-wrapper relative">
@@ -95,7 +96,8 @@
               </div>
             </div>
           </div>
-          <div class="mb-20 text-center">
+          <div class="mb-20 text-center relative">
+            <div class="powers-img-backdrop-left"></div>
             <h3 class="text-4xl md:text-6xl mb-5  font-bold">
               That’s it! Now it’s <br />
               your turn to say hi.
