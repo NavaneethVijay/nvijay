@@ -9,7 +9,7 @@
         class="container mx-auto bg-white mt-10 relative"
       >
         <div
-          class="absolute text-gray-600 top-0 left-0 text-sm italic font-mono"
+          class="absolute text-gray-600 top-0 left-0 text-base font-htmlCodes"
         >
           <span v-text="`&lt;html&gt;`"></span> <br />
           <span class="pl-6" v-text="`&lt;body&gt;`"> </span>
@@ -36,7 +36,7 @@
               I've been Working as a
               <span class="font-medium text-xl md:text-2xl">
                 Magento Frontend Developer </span
-              >in Codilar Technologies Pvt. Ltd , in Bengaluru for 2 year and
+              >in Codilar Technologies Pvt. Ltd in Bengaluru for 2 year and
               above with active contributations in development for more than 5
               projects.
             </h3>
@@ -59,7 +59,7 @@
               >
             </div>
           </div>
-          <h3 class="text-3xl sm:text-4xl font-semibold mt-20">
+          <h3 class="text-3xl sm:text-4xl font-semibold font-serif mt-20">
             Main Skills and Values
           </h3>
           <div class="pb-10 flex flex-wrap">
@@ -140,7 +140,7 @@
           </div>
         </div>
         <div
-          class="absolute text-gray-600 bottom-0 left-0 text-sm italic font-mono"
+          class="absolute text-gray-600 bottom-0 left-0 text-base font-htmlCodes"
         >
           <span class="pl-6" v-text="`&lt;/body&gt;`"> </span> <br />
           <span v-text="`&lt;/html&gt;`"></span>

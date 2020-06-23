@@ -1,73 +1,6 @@
 <template>
   <div class="layout min-h-screen overflow-x-hidden">
-    <div class="container mx-auto relative fixed top-0">
-      <header class="px-6 md:px-0 py-6 header flex justify-between w-full ">
-        <div>
-          <router-link class="font-bold text-xl" to="/">NV.</router-link>
-        </div>
-
-        <div class="menu-icon relative">
-          <div
-            class="text-white cursor-pointer"
-            @click="
-              () => {
-                if (this.showMenu) {
-                  this.closeMenu = true
-                  this.showMenu = false
-                } else {
-                  this.closeMenu = false
-                  this.showMenu = true
-                }
-              }
-            "
-          >
-            <div class="menu-main relative">
-              <div :class="{ active: showMenu }" class="menu js-menu">
-                <span class="menu__line"></span>
-                <span class="menu__line"></span>
-                <span class="menu__line"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-    </div>
-    <div>
-      <div :class="{ showMenu: showMenu, hideMenu: closeMenu }">
-        <div
-          class="h-screen overflow-hidden bg-primary fixed top-0 w-full menu-slide"
-        ></div>
-        <div
-          class="h-screen overflow-hidden bg-purple-200 fixed top-0 w-full menu-slide"
-        ></div>
-        <div
-          class="h-screen overflow-hidden bg-purple-100 fixed top-0 w-full menu-slide"
-        ></div>
-        <div
-          class="h-screen overflow-hidden bg-white fixed top-0 w-full menu-slide flex items-center justify-center text-primary"
-        >
-          <div class="container mx-auto">
-            <ul class=" text-4xl font-semibold my-8 flex flex-col items-center">
-              <li class="pr-8 my-6 overflow-hidden">
-                <router-link to="/">Home</router-link>
-              </li>
-              <li class="pr-8 my-6 overflow-hidden">
-                <router-link to="/about">About Me</router-link>
-              </li>
-              <li class="pr-8 my-6 overflow-hidden">
-                <router-link to="/blog">Blog</router-link>
-              </li>
-              <li class="pr-8 my-6 overflow-hidden">
-                <router-link to="/projects">Projects</router-link>
-              </li>
-              <li class="pr-8 my-6 overflow-hidden">
-                <router-link to="/contact">Contact</router-link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
+    <Header />
     <transition name="slide-fade" appear>
       <main>
         <!-- a wrapper for slot is needed -->
@@ -75,51 +8,16 @@
         <!-- the content -->
       </main>
     </transition>
-    <footer class="bg-gray-50 border-t py-5">
-      <div class="container mx-auto">
-        <div
-          class="flex flex-wrap justify-center md:justify-between items-center"
-        >
-          <div>
-            <span class="font-bold text-lg md:text-xl">Navaneeth Vijay</span>
-          </div>
-          <div>
-            <ul class="flex text-gray-900 text-md md:text-lg font-mono mt-2">
-              <li class="pr-8">
-                <a
-                  class="hover:text-primary"
-                  href="https://instagram.com/navneeth_vijay"
-                  >Instagram</a
-                >
-              </li>
-              <li class="pr-8">
-                <a
-                  class="hover:text-primary"
-                  href="https://github.com/NavaneethVijay"
-                  >Github</a
-                >
-              </li>
-              <li class="pr-8">
-                <a
-                  class="hover:text-primary"
-                  href="https://twitter.com/navaneeth_V29"
-                  >Twitter</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <Footer />
   </div>
 </template>
 <script>
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 export default {
-  data() {
-    return {
-      showMenu: false,
-      closeMenu: false,
-    }
+  components: {
+    Footer,
+    Header,
   },
 
   metaInfo: {
@@ -156,6 +54,27 @@ query {
 }
 </static-query>
 <style lang="scss">
+@font-face {
+  font-family: PlusJakartaDisplay;
+  src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Bold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: PlusJakartaDisplay;
+  src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Medium.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: PlusJakartaDisplay;
+  src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Regular.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: PlusJakartaDisplay;
+  src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Light.ttf');
+  font-weight: 300;
+}
+
 $bg-color: #eee;
 $color-white: #fff;
 $color-black: #222;

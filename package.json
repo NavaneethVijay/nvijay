@@ -13,7 +13,9 @@
     "gridsome-plugin-pwa": "^0.0.17",
     "sass": "^1.26.8",
     "sharp": "^0.25.3",
+    "swiper": "^5.4.5",
     "tailwindcss": "^1.4.6",
+    "vue-awesome-swiper": "^4.1.1",
     "vue-markdown": "^2.2.4"
   },
   "devDependencies": {

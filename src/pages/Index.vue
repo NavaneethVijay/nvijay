@@ -5,7 +5,7 @@
     >
       <div class="container p-4 md:p-0 mx-auto relative mt-20">
         <div
-          class="absolute text-gray-600 top-0 left-0 text-sm italic font-mono"
+          class="absolute text-gray-600 top-0 left-0 text-base font-htmlCodes"
         >
           <span v-text="getHtml"> </span> <br />
           <span class="pl-6" v-text="getBody"> </span>
@@ -80,7 +80,7 @@
             </div>
           </div>
           <div
-            class="absolute text-gray-600 bottom-0 left-0 text-sm italic font-mono"
+            class="absolute text-gray-600 bottom-0 left-0 text-base font-htmlCodes"
           >
             <span class="pl-6" v-text="getBodyClsoe"> </span> <br />
             <span v-text="getHtmlClose"> </span>
