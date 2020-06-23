@@ -96,11 +96,11 @@
             </div>
           </div>
           <div class="mb-20 text-center">
-            <h3 class="text-6xl mb-5  font-bold">
+            <h3 class="text-4xl md:text-6xl mb-5  font-bold">
               That’s it! Now it’s <br />
               your turn to say hi.
             </h3>
-            <p class="text-3xl text-regular text-gray-800">
+            <p class="text-xl md:text-3xl text-regular text-gray-800">
               Do you want to work together or talk about an idea? Let's get in
               touch <br />
               then. Just drop me a line!
