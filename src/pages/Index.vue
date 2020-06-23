@@ -10,7 +10,9 @@
           <span v-text="getHtml"> </span> <br />
           <span class="pl-6" v-text="getBody"> </span>
         </div>
-        <div class="flex pb-20 flex-wrap md:flex-no-wrap items-stretch">
+        <div
+          class="flex pb-20 flex-wrap md:flex-no-wrap items-stretch pt-10 md:pt-0"
+        >
           <div class="w-full md:w-3/5 relative h-inherit md:pt-20 pb-10 md:p-0">
             <div class="w-fll md:w-3/4 flex flex-col h-full justify-center">
               <div class="w-12 h-10">

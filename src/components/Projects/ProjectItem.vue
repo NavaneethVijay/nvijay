@@ -31,26 +31,8 @@
       </div>
       <div class="w-full md:w-3/4 mt-4 md:mt-0 md:p-6">
         <swiper ref="mySwiper" :options="swiperOptions">
-          <swiper-slide>
-            <img
-              class="mx-auto"
-              style="width: 90%"
-              src="https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c975ec5df2ed52f9c094_gallery-image-01.jpg"
-            />
-          </swiper-slide>
-          <swiper-slide>
-            <img
-              class="mx-auto"
-              style=" width: 90%"
-              src="https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c9947eda2a2d7ecdd362_gallery-image-04.jpg"
-            />
-          </swiper-slide>
-          <swiper-slide>
-            <img
-              class="mx-auto"
-              style=" width: 90%"
-              src="https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c33ba553da8565e5cbbf_gallery-image-05.jpg"
-            />
+          <swiper-slide v-for="(image, j) in project.images" :key="j">
+            <img class="mx-auto" style="width: 90%" :src="image" />
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>

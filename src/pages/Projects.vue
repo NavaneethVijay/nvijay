@@ -32,7 +32,9 @@
           <div class="pb-20">
             <div class="project-wrapper my-5 md:my-10">
               <div class="pb-5 px-4 md:py-10">
-                <h3 class="text-2xl md:text-3xl text-gray-900 font-bold ">
+                <h3
+                  class="hidden text-2xl md:text-3xl text-gray-900 font-bold "
+                >
                   Open source projects
                 </h3>
               </div>
@@ -85,7 +87,9 @@
 
                 <div class="mt-20">
                   <div class="pb-5 px-4 md:py-10">
-                    <h3 class="text-2xl md:text-3xl text-gray-900 font-bold ">
+                    <h3
+                      class="hidden text-2xl md:text-3xl text-gray-900 font-bold "
+                    >
                       Client Projects
                     </h3>
                   </div>
@@ -135,6 +139,11 @@ export default {
           tags: ['Nuxtjs', 'FirebaseAuth', 'Firestore'],
           link: 'https://witless.netlify.app',
           bgColor: 'bg-orange-100',
+          images: [
+            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c975ec5df2ed52f9c094_gallery-image-01.jpg',
+            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c9947eda2a2d7ecdd362_gallery-image-04.jpg',
+            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c9947eda2a2d7ecdd362_gallery-image-05.jpg',
+          ],
         },
         {
           title: 'Shordyurl',
@@ -142,6 +151,11 @@ export default {
           tags: ['MongoDb', 'ExpressJs', 'TailwindCSS'],
           link: 'https://shordyurl.herokuapp.com',
           bgColor: 'bg-teal-100',
+          images: [
+            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c9947eda2a2d7ecdd362_gallery-image-04.jpg',
+            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c975ec5df2ed52f9c094_gallery-image-01.jpg',
+            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c9947eda2a2d7ecdd362_gallery-image-05.jpg',
+          ],
         },
       ],
       clientProjects: [
@@ -152,6 +166,11 @@ export default {
           tags: ['HTML', 'Jquery', 'Sass'],
           link: 'https://www.fi8healthandfitness.com',
           bgColor: 'bg-purple-100',
+          images: [
+            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c33ba553da8565e5cbbf_gallery-image-05.jpg',
+            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c975ec5df2ed52f9c094_gallery-image-01.jpg',
+            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c9947eda2a2d7ecdd362_gallery-image-04.jpg',
+          ],
         },
       ],
     }
