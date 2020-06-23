@@ -1,5 +1,11 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './src/**/*.vue',
+    './src/**/*.js',
+    './src/**/*.jsx',
+    './src/**/*.pug',
+    './src/**/*.md',
+  ],
   theme: {
     fontFamily: {
       sans: ['PlusJakartaDisplay', 'sans-serif'],
