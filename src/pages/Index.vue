@@ -12,10 +12,10 @@
         </div>
         <div class="flex pb-20 flex-wrap md:flex-no-wrap items-stretch">
           <div class="w-full md:w-3/5 relative h-inherit md:pt-20 pb-10 md:p-0">
-            <div
-              class="w-fll md:w-3/4 flex flex-col h-full justify-center pt-10"
-            >
-              <img src="/waving.gif" style="opacity: 1;" class="image w-12" />
+            <div class="w-fll md:w-3/4 flex flex-col h-full justify-center">
+              <div class="w-12 h-10">
+                <img src="/waving.gif" style="opacity: 1;" class="image w-12" />
+              </div>
               <h1 class=" text-3xl sm:text-5xl font-bold text-primary">
                 Hey There!
               </h1>

@@ -9,14 +9,14 @@
           <h3 class="text-2xl sm:text-4xl font-bold ">
             {{ project.title }}
           </h3>
-          <h3 class="my-6 text-lg md:text-xl font-regular leading-snug">
+          <h3 class="mt-6 text-lg md:text-xl font-regular leading-snug">
             {{ project.description }}
           </h3>
-          <p class="font-mono">
+          <p class="font-mono mt-4">
             <span
               v-for="(tag, i) in project.tags"
               :key="i"
-              class="underline px-2"
+              class="border text-xs border-black rounded py-1 px-2 mr-2"
               >{{ tag }}</span
             >
           </p>
@@ -29,7 +29,7 @@
           </div>
         </div>
       </div>
-      <div class="w-full md:w-3/4 p-6">
+      <div class="w-full md:w-3/4 mt-4 md:mt-0 md:p-6">
         <swiper ref="mySwiper" :options="swiperOptions">
           <swiper-slide>
             <img

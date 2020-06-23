@@ -75,12 +75,6 @@ query {
   font-weight: 300;
 }
 
-$bg-color: #eee;
-$color-white: #fff;
-$color-black: #222;
-$color-purple-dark: #7f39fb;
-$color-purple-light: #dbb2ff;
-
 .clickhere {
   top: 50px;
   right: 0;
@@ -288,7 +282,7 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    background-color: $color-black;
+    background-color: #000;
     border-radius: 13px;
     transition-duration: 0.5s;
     transition-delay: 0.8s;

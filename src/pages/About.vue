@@ -19,14 +19,16 @@
             <div class="flex items-center md:pt-10">
               <div class="">
                 <div class="bg-text-wrapper relative">
-                  <h1 class="text-3xl sm:text-4xl font-semibold ">
+                  <h1
+                    class="text-3xl sm:text-5xl md:text-6xl font-bold tracking-wide"
+                  >
                     Mutant Powers
                   </h1>
                   <div class="text-bg-accent"></div>
                 </div>
               </div>
             </div>
-            <h3 class="text-lg md:text-2xl text-gray-800 font-regular ">
+            <h3 class="text-lg md:text-2xl mt-2 text-gray-800 font-regular">
               Experience and Skills
             </h3>
           </div>

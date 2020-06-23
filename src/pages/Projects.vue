@@ -5,26 +5,24 @@
     >
       <div class="container mx-auto mt-10  relative">
         <div
-          class="absolute text-gray-600 top-0 left-0 text-base font-htmlCodes"
+          class="absolute text-gray-600 top-0 left-0 text-base font-htmlCodes pl-4"
         >
           <span v-text="`&lt;html&gt;`"></span> <br />
           <span class="pl-6" v-text="`&lt;body&gt;`"> </span>
         </div>
         <div class="py-8">
-          <div class="py-10">
+          <div class="py-10 px-4">
             <div class="flex items-center md:pt-10">
               <div>
                 <div class="bg-text-wrapper relative">
                   <h1
-                    class="text-3xl sm:text-5xl font-bold font-serif tracking-wide	 "
+                    class="text-3xl sm:text-5xl md:text-6xl font-bold tracking-wide"
                   >
-                    Accomplished Projects
+                    Successful Missions
                   </h1>
                   <div class="text-bg-accent"></div>
                 </div>
-                <h3
-                  class="text-lg md:text-2xl mt-2 text-gray-800 font-regular "
-                >
+                <h3 class="text-lg md:text-2xl mt-2 text-gray-800 font-regular">
                   Open Source and client projects
                 </h3>
               </div>
@@ -32,8 +30,8 @@
           </div>
           <div class="pb-20">
             <div class="project-wrapper my-5 md:my-10">
-              <div class="pb-5 md:py-10">
-                <h3 class="text-3xl text-gray-900 font-bold ">
+              <div class="pb-5 px-4 md:py-10">
+                <h3 class="text-2xl md:text-3xl text-gray-900 font-bold ">
                   Open source projects
                 </h3>
               </div>
@@ -41,14 +39,16 @@
                 <ProjectItem :project="project" />
               </div>
               <div>
-                <div class="py-10">
-                  <h4 class="text-lg md:text-2xl mt-2 text-gray-900 font-bold ">
+                <div class="py-10 px-4">
+                  <h4
+                    class="text-lg md:text-2xl mt-2 text-gray-900 font-medium "
+                  >
                     Packages and libraries
                   </h4>
                 </div>
-                <div class="flex">
-                  <div class="w-1/3">
-                    <div class=" p-6 mr-2 border rounded-lg">
+                <div class="flex flex-wrap">
+                  <div class="w-full md:w-1/3">
+                    <div class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg">
                       <h3 class="font-bold text-lg">Full Array Search</h3>
                       <p class="text-md">Lorem ipsum dolor sit</p>
                       <a
@@ -58,8 +58,8 @@
                       >
                     </div>
                   </div>
-                  <div class="w-1/3">
-                    <div class=" p-6 mr-2 border rounded-lg">
+                  <div class="w-full md:w-1/3">
+                    <div class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg">
                       <h3 class="font-bold text-lg">Frozen Cookies</h3>
                       <p class="text-md">Lorem ipsum dolor sit</p>
                       <a
@@ -69,8 +69,8 @@
                       >
                     </div>
                   </div>
-                  <div class="w-1/3">
-                    <div class=" p-6 mr-2 border rounded-lg">
+                  <div class="w-full md:w-1/3">
+                    <div class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg">
                       <h3 class="font-bold text-lg">Voute Maker</h3>
                       <p class="text-md">Lorem ipsum dolor sit</p>
                       <a
@@ -83,8 +83,8 @@
                 </div>
 
                 <div class="mt-20">
-                  <div class="pb-5 md:py-10">
-                    <h3 class="text-3xl text-gray-900 font-bold ">
+                  <div class="pb-5 px-4 md:py-10">
+                    <h3 class="text-2xl md:text-3xl text-gray-900 font-bold ">
                       Client Projects
                     </h3>
                   </div>
@@ -95,9 +95,20 @@
               </div>
             </div>
           </div>
+          <div class="mb-20 text-center">
+            <h3 class="text-6xl mb-5  font-bold">
+              That’s it! Now it’s <br />
+              your turn to say hi.
+            </h3>
+            <p class="text-3xl text-regular text-gray-800">
+              Do you want to work together or talk about an idea? Let's get in
+              touch <br />
+              then. Just drop me a line!
+            </p>
+          </div>
         </div>
         <div
-          class="absolute text-gray-600 bottom-0 left-0 text-base font-htmlCodes"
+          class="absolute text-gray-600 bottom-0 left-0 text-base font-htmlCodes pl-4"
         >
           <span class="pl-6" v-text="`&lt;/body&gt;`"> </span> <br />
           <span v-text="`&lt;/html&gt;`"></span>
@@ -138,10 +149,18 @@ export default {
             'Breaking the ordinary and mixing up the workout routine is easy at FI8.',
           tags: ['HTML', 'Jquery', 'Sass'],
           link: 'https://www.fi8healthandfitness.com',
-          bgColor: 'bg-blue-200',
+          bgColor: 'bg-purple-100',
         },
       ],
     }
   },
 }
 </script>
+<style>
+.full-width {
+  min-width: 100vw;
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+}
+</style>
