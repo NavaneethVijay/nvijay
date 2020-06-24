@@ -42,43 +42,59 @@
                 <ProjectItem :project="project" />
               </div>
               <div>
-                <div class="py-10 px-4">
+                <div class="pt-20 pb-10 px-4">
                   <h4
-                    class="text-lg md:text-2xl mt-2 text-gray-900 font-medium "
+                    class="text-xl md:text-3xl mt-2 text-gray-900 font-medium "
                   >
-                    Packages and libraries
+                    Packages and libraries <a href="https://github.com/NavaneethVijay" class="ml-4 text-xl underline text-primary">Find More</a>
                   </h4>
                 </div>
                 <div class="flex flex-wrap">
                   <div class="w-full md:w-1/3">
-                    <div class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg">
+                    <div
+                      class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg h-full transition duration-500 ease-in-out hover:shadow-md relative"
+                    >
+                    <div class="absolute top-0 right-0 opacity-25 pt-10 pr-10"><Github className="w-20 h-20 opacity-25" /></div>
                       <h3 class="font-bold text-lg">Full Array Search</h3>
-                      <p class="text-md">Lorem ipsum dolor sit</p>
+                      <p class="text-md mt-2">
+                        Javascript utility that allows for searching strings in
+                        an array based on indexing
+                      </p>
                       <a
                         href="https://github.com/NavaneethVijay/fullarray-search"
-                        class="text-md font-medium text-gray-800 font-medium hover:underline mt-2 block"
+                        class="text-sm font-medium text-gray-800 font-medium hover:underline mt-2 block"
                         >View →</a
                       >
                     </div>
                   </div>
-                  <div class="w-full md:w-1/3">
-                    <div class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg">
+                  <div class="w-full md:w-1/3 ">
+                    <div
+                      class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg h-full transition duration-500 ease-in-out hover:shadow-md relative"
+                    >
+                    <div class="absolute top-0 right-0 opacity-25 pt-10 pr-10"><Github className="w-20 h-20 opacity-25" /></div>
                       <h3 class="font-bold text-lg">Frozen Cookies</h3>
-                      <p class="text-md">Lorem ipsum dolor sit</p>
-                      <a
-                        href="https://github.com/NavaneethVijay/fullarray-search"
-                        class="text-md font-medium text-gray-800 font-medium hover:underline mt-2 block"
-                        >View →</a
-                      >
+                      <p class="text-md mt-2">
+                        Simple Javascript API for handling browser cookies </p>
+                        <a
+                          href="https://github.com/NavaneethVijay/frozen-cookies"
+                          class="text-sm font-medium text-gray-800 font-medium hover:underline mt-2 block"
+                          >View →</a
+                        >
+                      </p>
                     </div>
                   </div>
                   <div class="w-full md:w-1/3">
-                    <div class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg">
+                    <div
+                      class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg h-full transition duration-500 ease-in-out hover:shadow-md relative"
+                    >
+                    <div class="absolute top-0 right-0 opacity-25 pt-10 pr-10"><Github className="w-20 h-20 opacity-25" /></div>
                       <h3 class="font-bold text-lg">Voute Maker</h3>
-                      <p class="text-md">Lorem ipsum dolor sit</p>
+                      <p class="text-md mt-2">
+                        YourQuote like image generator using nodejs
+                      </p>
                       <a
                         href="https://github.com/NavaneethVijay/fullarray-search"
-                        class="text-md font-medium text-gray-800 font-medium hover:underline mt-2 block"
+                        class="text-sm font-medium text-gray-800 font-medium hover:underline mt-2 block"
                         >View →</a
                       >
                     </div>
@@ -125,9 +141,11 @@
 </template>
 <script>
 import ProjectItem from '@/components/Projects/ProjectItem'
+import Github from '@/components/Icons/Github'
 export default {
   components: {
     ProjectItem,
+    Github
   },
   data() {
     return {
