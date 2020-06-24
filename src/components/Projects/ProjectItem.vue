@@ -2,7 +2,7 @@
   <div>
     <div
       :class="project.bgColor"
-      class="full-width project-item  px-6 py-40 md:py-32"
+      class="full-width project-item  px-6 md:py-32 py-20"
     >
       <div class="container mx-auto flex flex-wrap items-center">
         <div class="w-full md:w-1/4">

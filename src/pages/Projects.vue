@@ -42,7 +42,7 @@
                 <ProjectItem :project="project" />
               </div>
               <div>
-                <div class="pt-20 pb-10 px-4">
+                <div class="pt-10 md:pt-20 pb-10 px-4">
                   <h4
                     class="text-xl md:text-3xl mt-2 text-gray-900 font-medium "
                   >
@@ -52,7 +52,7 @@
                 <div class="flex flex-wrap">
                   <div class="w-full md:w-1/3">
                     <div
-                      class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg h-full transition duration-500 ease-in-out hover:shadow-md relative"
+                      class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg md:h-full transition duration-500 ease-in-out hover:shadow-md relative"
                     >
                     <div class="absolute top-0 right-0 opacity-25 pt-10 pr-10"><Github className="w-20 h-20 opacity-25" /></div>
                       <h3 class="font-bold text-lg">Full Array Search</h3>
@@ -69,7 +69,7 @@
                   </div>
                   <div class="w-full md:w-1/3 ">
                     <div
-                      class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg h-full transition duration-500 ease-in-out hover:shadow-md relative"
+                      class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg md:h-full transition duration-500 ease-in-out hover:shadow-md relative"
                     >
                     <div class="absolute top-0 right-0 opacity-25 pt-10 pr-10"><Github className="w-20 h-20 opacity-25" /></div>
                       <h3 class="font-bold text-lg">Frozen Cookies</h3>
@@ -85,7 +85,7 @@
                   </div>
                   <div class="w-full md:w-1/3">
                     <div
-                      class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg h-full transition duration-500 ease-in-out hover:shadow-md relative"
+                      class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg md:h-full transition duration-500 ease-in-out hover:shadow-md relative"
                     >
                     <div class="absolute top-0 right-0 opacity-25 pt-10 pr-10"><Github className="w-20 h-20 opacity-25" /></div>
                       <h3 class="font-bold text-lg">Voute Maker</h3>
@@ -101,7 +101,7 @@
                   </div>
                 </div>
 
-                <div class="mt-20">
+                <div class="mt-10 md:mt-20">
                   <div class="pb-5 px-4 md:py-10">
                     <h3
                       class="hidden text-2xl md:text-3xl text-gray-900 font-bold "
@@ -118,11 +118,11 @@
           </div>
           <div class="mb-20 text-center relative">
             <div class="powers-img-backdrop-left"></div>
-            <h3 class="text-4xl md:text-6xl mb-5  font-bold">
+            <h3 class="text-4xl md:text-6xl mb-5 px-4 font-bold">
               That’s it! Now it’s <br />
               your turn to say hi.
             </h3>
-            <p class="text-xl md:text-3xl text-regular text-gray-800">
+            <p class="text-xl md:text-3xl text-regular text-gray-800 px-4">
               Do you want to work together or talk about an idea? Let's get in
               touch <br />
               then. Just drop me a line!
