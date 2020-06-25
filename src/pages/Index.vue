@@ -31,11 +31,9 @@
                 <div class="text-bg-accent"></div>
               </div>
               <div class="my-12">
-                <h2
-                  class="text-2xl sm:text-4xl font-medium flex flex-wrap items-center"
-                >
+                <h2 class="text-2xl sm:text-4xl font-medium ">
                   I solve
-                  <span class="px-1 lowercase text-primary"
+                  <span class="px-1 lowercase text-primary flex items-center"
                     ><vue-typed-js
                       @onStringTyped="handleTyped"
                       :startDelay="200"
@@ -44,10 +42,10 @@
                       :typeSpeed="300"
                       :strings="typedTexts"
                     >
-                      <h1 class="typing"></h1> </vue-typed-js
-                  ></span>
-                  <br />
-                  problems
+                      <h1 class="typing"></h1>
+                    </vue-typed-js>
+                    <span class="text-black">problems</span>
+                  </span>
                 </h2>
                 <h3
                   class=" text-lg md:text-2xl font-regular leading-relaxed mt-2"
