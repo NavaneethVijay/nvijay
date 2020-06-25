@@ -31,7 +31,9 @@
                 <div class="text-bg-accent"></div>
               </div>
               <div class="my-12">
-                <h2 class="text-2xl sm:text-4xl font-medium flex flex-wrap items-center">
+                <h2
+                  class="text-2xl sm:text-4xl font-medium flex flex-wrap items-center"
+                >
                   I solve
                   <span class="px-1 lowercase text-primary"
                     ><vue-typed-js
@@ -44,6 +46,7 @@
                     >
                       <h1 class="typing"></h1> </vue-typed-js
                   ></span>
+                  <br />
                   problems
                 </h2>
                 <h3
