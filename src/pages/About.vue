@@ -147,7 +147,7 @@
               </h3>
             </div>
             <div>
-              <div class="md:pr-6 py-5 md:py-10 rounded ">
+              <div class="md:pr-6 pb-2 md:pb-5 rounded ">
                 <div class="flex items-start">
                   <div class="relative">
                     <h5 class="font-medium text-lg md:text-2xl">

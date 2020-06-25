@@ -58,21 +58,25 @@ query {
   font-family: PlusJakartaDisplay;
   src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Bold.ttf');
   font-weight: 700;
+  font-display: swap;
 }
 @font-face {
   font-family: PlusJakartaDisplay;
   src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Medium.ttf');
   font-weight: 500;
+  font-display: swap;
 }
 @font-face {
   font-family: PlusJakartaDisplay;
   src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Regular.ttf');
   font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: PlusJakartaDisplay;
   src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Light.ttf');
   font-weight: 300;
+  font-display: swap;
 }
 
 .clickhere {
