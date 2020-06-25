@@ -35,6 +35,7 @@
                   I solve
                   <span class="px-1 lowercase text-primary flex items-center"
                     ><vue-typed-js
+                      class="flex"
                       @onStringTyped="handleTyped"
                       :startDelay="200"
                       :backSpeed="150"
@@ -44,7 +45,7 @@
                     >
                       <h1 class="typing"></h1>
                     </vue-typed-js>
-                    <span class="text-black">problems</span>
+                    <span class="text-black pl-2">problems</span>
                   </span>
                 </h2>
                 <h3
