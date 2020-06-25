@@ -184,7 +184,7 @@
           </div>
           <div class="w-full md:w-2/5 pb-10">
             <div class="relative">
-              <img src="/navaneeth.jpeg" class="hero-img" />
+              <img src="/navaneeth.jpg" class="hero-img" />
               <div class="hero-img-backdrop"></div>
             </div>
           </div>
