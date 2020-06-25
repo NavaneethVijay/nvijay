@@ -7,8 +7,8 @@
       <div class="container mx-auto flex flex-wrap items-center">
         <div class="w-full md:w-1/4">
           <div class="text-center">
-            <h3 class="text-2xl sm:text-4xl font-bold ">
-              {{ project.title }}
+            <h3 class="text-2xl sm:text-4xl font-bold overflow-hidden">
+              <span> {{ project.title }}</span>
             </h3>
             <h3 class="mt-6 text-lg md:text-xl font-regular leading-snug">
               {{ project.description }}

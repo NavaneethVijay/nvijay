@@ -46,8 +46,7 @@
               While I binge watch tv series and play
               <span class="font-medium text-xl md:text-2xl"> Dota2</span> on a
               'normal' day, I also learned latest tools and technologies which
-              allowed me to accomplish myself as a web developer along with
-              these following skills and values.
+              allowed me to accomplish myself as a web developer.
             </h3>
             <h3 class="text-lg md:text-xl font-regular">
               I’m a fast learner, able to pick up new skills and juggle
@@ -61,70 +60,55 @@
               >
             </div>
           </div>
-          <h3 class="text-3xl sm:text-4xl font-semibold font-serif mt-20">
-            Main Skills and Values
-          </h3>
-          <div class="pb-10 flex flex-wrap">
-            <div class="w-full md:w-1/2">
-              <ul class="list-disc pl-4">
-                <li class="py-5">
-                  <div>
-                    <h3 class="font-semibold text-xl md:text-2xl">
-                      User experience design (ux)
-                    </h3>
-                    <h3 class="font-regular text-md md:text-lg text-gray-600">
-                      Delight the user and make it work.
-                    </h3>
-                  </div>
-                </li>
-                <li class="py-5">
-                  <div>
-                    <h3 class="font-semibold text-xl md:text-2xl">
-                      Web and user interface design
-                    </h3>
-                    <h3 class="font-regular text-md md:text-lg text-gray-600">
-                      Websites, web experiences, ...
-                    </h3>
-                  </div>
-                </li>
-              </ul>
+
+          <div class="mt-10 md:mt-20">
+            <div class="pb-5 md:px-0 md:py-10">
+              <h3 class="text-2xl md:text-4xl font-semibold mb-4 ">
+                Work Experience
+              </h3>
+              <div>
+                <h3 class="text-md md:text-xl font-regular">
+                  I've been Working as a
+                  <span class="font-medium text-lg md:text-2xl">
+                    Magento Frontend Developer </span
+                  >in Codilar Technologies Pvt. Ltd in Bengaluru for 2 year and
+                  above with active contributations in development for more than
+                  5 projects.
+                </h3>
+              </div>
             </div>
-            <div class="w-full md:w-1/2">
-              <ul class="list-disc pl-4">
-                <li class="py-5">
-                  <div>
-                    <h3 class="font-semibold text-xl md:text-2xl">
-                      Good design is good business
-                    </h3>
-                    <h3 class="font-regular text-md md:text-lg text-gray-600">
-                      It’s not only about beauty, it has to work.
-                    </h3>
+            <div>
+              <div class="md:px-6 py-5 md:py-10 rounded">
+                <div class="flex">
+                  <img
+                    class="w-16 md:w-20 h-16 md:h-20 cover"
+                    src="https://pbs.twimg.com/profile_images/822422940377554944/Hk7sgQ96_400x400.jpg"
+                  />
+                  <div class="pl-4">
+                    <h5 class="font-medium text-lg md:text-2xl">
+                      Magento Frontend Developer
+                    </h5>
+                    <p class="text-sm md:text-base">
+                      Codilar Technologies Pvt. Ltd
+                    </p>
+                    <p class="text-sm text-gray-700">June 2018 - Current</p>
                   </div>
-                </li>
-                <li class="py-5">
-                  <div>
-                    <h3 class="font-semibold text-xl md:text-2xl">
-                      Keep it simple
-                    </h3>
-                    <h3 class="font-regular text-md md:text-lg text-gray-600">
-                      Why make it complicated?
-                    </h3>
-                  </div>
-                </li>
-              </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="overflow-hidden hidden relative mb-20">
-            <div class="bg-purple-100 container mx-auto rounded-lg p-6">
+
+          <div class="overflow-hidden  relative mb-20">
+            <div class="container mx-auto rounded-lg py-6">
               <div class="w-full">
                 <div class="md:pb-5">
-                  <div class="flex items-center pt-10">
+                  <div class="flex flex-col items-start pt-10">
                     <div class="">
                       <h3 class="text-2xl sm:text-4xl font-semibold ">
                         Arsenal kit
                       </h3>
                     </div>
-                    <div class="w-32 headling-line hero-side-bg mx-4 "></div>
+                    <div class="w-32 headling-line hero-side-bg m-0"></div>
                   </div>
                   <ul class="mt-10 text-xl font-medium flex flex-wrap">
                     <li class="pr-10 mb-6">HTML</li>

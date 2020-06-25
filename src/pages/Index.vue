@@ -31,7 +31,24 @@
                 <div class="text-bg-accent"></div>
               </div>
               <div class="my-12">
-                <h3 class=" text-lg md:text-2xl font-regular leading-relaxed">
+                <h2 class="text-2xl sm:text-4xl font-medium flex  items-center">
+                  I solve
+                  <span class="px-1 lowercase text-primary"
+                    ><vue-typed-js
+                      @onStringTyped="handleTyped"
+                      :startDelay="200"
+                      :backSpeed="150"
+                      :backDelay="800"
+                      :typeSpeed="300"
+                      :strings="typedTexts"
+                    >
+                      <h1 class="typing"></h1> </vue-typed-js
+                  ></span>
+                  problems
+                </h2>
+                <h3
+                  class=" text-lg md:text-2xl font-regular leading-relaxed mt-2"
+                >
                   I'm a full stack web developer based in Bengaluru. I build
                   interactive websites that run across platforms & devices but
                   enough
@@ -109,6 +126,13 @@ export default {
       { name: 'author', content: 'Navaneeth Vijay' },
     ],
   },
+  data() {
+    return {
+      typedTexts: ['All', 'Some', 'Your'],
+      completedTypes: [],
+      currentTyped: 0,
+    }
+  },
   computed: {
     getHtml() {
       return '<html>'
@@ -121,6 +145,14 @@ export default {
     },
     getBodyClsoe() {
       return '</body>'
+    },
+  },
+  methods: {
+    handleTyped() {
+      if (this.currentTyped <= 2) {
+        this.completedTypes.push(this.typedTexts[this.currentTyped])
+        this.currentTyped++
+      }
     },
   },
 }
