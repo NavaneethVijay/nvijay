@@ -26,6 +26,16 @@ module.exports = {
       },
     },
     {
+      use: "gridsome-plugin-service-worker",
+      options: {
+        precachedRoutes: ["/"],
+        cacheOnly: {
+          cacheName: "co-v1",
+          routes: ["/"],
+        },
+      },
+    },
+    {
       use: 'gridsome-plugin-manifest',
       options: {
         background_color: '#fff',
@@ -44,7 +54,7 @@ module.exports = {
         display: 'standalone',
         statusBarStyle: 'default',
         manifestPath: 'manifest.json',
-        disableServiceWorker: true,
+        disableServiceWorker: false,
         serviceWorkerPath: 'service-worker.js',
         cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
         shortName: 'NavaneethVijay',
