@@ -34,13 +34,13 @@
           </div>
 
           <div class="my-8">
-            <h3 class="text-lg md:text-xl font-regular my-4">
+            <h3 class="text-base md:text-xl font-regular my-4">
               While I binge watch tv series and play
               <span class="font-medium text-xl md:text-2xl"> Dota2</span> on a
               'normal' day, I also learned latest tools and technologies which
               allowed me to accomplish myself as a web developer.
             </h3>
-            <h3 class="text-lg md:text-xl font-regular">
+            <h3 class="text-base md:text-2xl font-regular">
               I’m a fast learner, able to pick up new skills and juggle
               different projects and roles with relative ease.
             </h3>
@@ -53,13 +53,13 @@
             </div>
           </div>
 
-          <div class="mt-10 md:mt-20">
+          <div class="mt-20">
             <div class="pb-5 md:px-0 md:py-10">
               <h3 class="text-2xl md:text-4xl font-semibold mb-4 ">
                 Work Experience
               </h3>
               <div>
-                <h3 class="text-md md:text-xl font-regular">
+                <h3 class="text-base md:text-xl font-regular">
                   I've been Working as a
                   <span class="font-medium text-lg md:text-2xl">
                     Magento Frontend Developer </span
@@ -125,7 +125,7 @@
                       </h3>
                     </div>
                   </div>
-                  <ul class="mt-10 text-xl font-medium flex flex-wrap">
+                  <ul class="mt-4 text-md sm:text-lg font-medium flex flex-wrap">
                     <li class="pr-10 mb-6">HTML</li>
                     <li class="pr-10 mb-6">CSS</li>
                     <li class="pr-10 mb-6">CSS</li>
@@ -141,7 +141,7 @@
           </div>
 
           <div class="mt-10">
-            <div class="pb-5 md:px-0 md:pt-10">
+            <div class="md:px-0 md:pt-10">
               <h3 class="text-2xl md:text-4xl font-semibold mb-4 ">
                 Education
               </h3>
@@ -203,7 +203,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Naveneeth Vijay | About',
+    title: 'Navaneeth Vijay | About',
   },
 }
 </script>

@@ -88,7 +88,7 @@
                     ></path></svg
                 ></a>
               </li>
-              <li class="pr-8">
+              <li>
                 <a
                   class="hover:text-primary"
                   href="https://twitter.com/navaneeth_V29"

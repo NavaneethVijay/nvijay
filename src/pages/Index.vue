@@ -135,7 +135,7 @@
               </ul>
               <div class="my-6 md:my-12">
                 <h2
-                  class="text-3xl sm:text-4xl font-medium  md:flex flex-wrap md:flex-wrap "
+                  class="text-2xl sm:text-4xl font-medium  md:flex flex-wrap md:flex-wrap "
                 >
                   <span>I solve</span>
                   <br />
@@ -171,7 +171,7 @@
                   , how can I help you?
                 </h3>
 
-                <div class="mt-10">
+                <div class="mt-5 md:mt-10">
                   <span
                     class="font-medium py-1 border-gray-900 border-b text-base text-lg"
                     ><a href="mailto:sainavaneeth@gmail.com">

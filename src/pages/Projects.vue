@@ -46,7 +46,7 @@
                   <h4
                     class="text-xl md:text-3xl mt-2 text-gray-900 font-medium "
                   >
-                    Packages and libraries <a href="https://github.com/NavaneethVijay" class="ml-4 text-xl underline text-primary">Find More</a>
+                    Other libraries <a href="https://github.com/NavaneethVijay" class="ml-4 text-xl underline text-primary">Find More</a>
                   </h4>
                 </div>
                 <div class="flex flex-wrap">

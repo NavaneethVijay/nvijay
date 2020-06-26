@@ -83,7 +83,7 @@
                   ></path></svg
               ></a>
             </li>
-            <li class="pr-8">
+            <li>
               <a
                 class="hover:text-primary"
                 href="https://twitter.com/navaneeth_V29"
@@ -114,7 +114,7 @@
       </div>
       <section>
         <div
-          class="transition duration-500 ease-in-out md:hover:bg-purple-100 cursor-pointer"
+          class="transition duration-500 ease-in-out md:hover:bg-purple-100 md:cursor-pointer"
           v-for="edge in $page.posts.edges"
           :key="edge.node.id"
         >
