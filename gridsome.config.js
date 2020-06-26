@@ -34,10 +34,11 @@ module.exports = {
     {
       use: 'gridsome-plugin-service-worker',
       options: {
-        precachedRoutes: ['/'],
-        cacheOnly: {
-          cacheName: 'co-v1',
-          routes: ['/']
+        networkFirst: {
+          routes: [
+            '/',
+            /\.(js|css|png)$/ // means "every JS, CSS, and PNG images"
+          ]
         }
       }
     },
