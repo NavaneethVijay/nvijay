@@ -16,20 +16,14 @@ module.exports = {
   siteName: 'NavaneethVijay',
   plugins: [
     {
-      use: '@gridsome/plugin-google-analytics',
-      options: {
-        id: 'UA-170902890-1'
-      }
-    },
-    {
       use: '@gridsome/source-contentful',
       options: {
         space: process.env.CONTENTFUL_SPACE, // required
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, // required
         host: 'cdn.contentful.com',
         environment: 'master',
-        typeName: 'Contentful'
-      }
+        typeName: 'Contentful',
+      },
     },
     {
       use: 'gridsome-plugin-manifest',
@@ -39,8 +33,8 @@ module.exports = {
         name: 'NavaneethVijay',
         short_name: 'NavaneethVijay',
         theme_color: '#fff',
-        lang: 'en'
-      }
+        lang: 'en',
+      },
     },
     {
       use: 'gridsome-plugin-pwa',
@@ -58,15 +52,15 @@ module.exports = {
         backgroundColor: '#fff',
         icon: 'src/favicon.png', // must be provided like 'src/favicon.png'
         msTileImage: '',
-        msTileColor: '#fff'
-      }
-    }
+        msTileColor: '#fff',
+      },
+    },
   ],
   css: {
     loaderOptions: {
       postcss: {
-        plugins: postcssPlugins
-      }
-    }
-  }
+        plugins: postcssPlugins,
+      },
+    },
+  },
 }
