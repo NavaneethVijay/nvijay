@@ -40,7 +40,7 @@
               'normal' day, I also learned latest tools and technologies which
               allowed me to accomplish myself as a web developer.
             </h3>
-            <h3 class="text-base md:text-2xl font-regular">
+            <h3 class="text-base md:text-xl font-regular">
               I’m a fast learner, able to pick up new skills and juggle
               different projects and roles with relative ease.
             </h3>
@@ -125,7 +125,9 @@
                       </h3>
                     </div>
                   </div>
-                  <ul class="mt-4 text-md sm:text-lg font-medium flex flex-wrap">
+                  <ul
+                    class="mt-4 text-md sm:text-lg font-medium flex flex-wrap"
+                  >
                     <li class="pr-10 mb-6">HTML</li>
                     <li class="pr-10 mb-6">CSS</li>
                     <li class="pr-10 mb-6">CSS</li>
