@@ -17,7 +17,7 @@ import Header from '@/components/Header'
 export default {
   components: {
     Footer,
-    Header,
+    Header
   },
 
   metaInfo: {
@@ -25,24 +25,23 @@ export default {
       {
         property: 'og:title',
         content:
-          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript',
+          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript'
       },
       {
         property: 'og:type',
-        content: 'website',
+        content: 'website'
       },
       {
         property: 'og:site_name',
-        content:
-          'Front-End Developer, Bengaluru India. www.navaneethvijay.com.',
+        content: 'Front-End Developer, Bengaluru India. www.navaneethvijay.com.'
       },
       {
         property: 'og:url',
-        content: 'www.navaneethvijay.com',
-      },
-    ],
+        content: 'www.navaneethvijay.com'
+      }
+    ]
     // etc...
-  },
+  }
 }
 </script>
 
@@ -77,6 +76,20 @@ query {
   src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Light.ttf');
   font-weight: 300;
   font-display: swap;
+}
+
+.typed-element {
+  display: flex;
+  align-items: center;
+}
+.typed-element .typed-cursor {
+  opacity: 1;
+  animation: typedjsBlink 0.7s infinite;
+}
+@keyframes typedjsBlink {
+  50% {
+    opacity: 0;
+  }
 }
 
 .clickhere {
@@ -120,24 +133,24 @@ query {
     z-index: 2;
 
     &:nth-child(4) {
-      animation-delay: 0.5s;
+      animation-delay: 0.2s;
     }
 
     &:nth-child(3) {
-      animation-delay: 0.8s;
+      animation-delay: 0.4s;
     }
     &:nth-child(2) {
-      animation-delay: 1.2s;
+      animation-delay: 0.6s;
     }
     &:nth-child(1) {
-      animation-delay: 1.5s;
+      animation-delay: 1s;
     }
   }
 }
 .showMenu {
   .menu-slide {
     animation-name: slideInto;
-    animation-duration: 0.6s;
+    animation-duration: 0.5s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
     visibility: visible;
@@ -145,17 +158,17 @@ query {
     z-index: 2;
 
     &:nth-child(1) {
-      animation-delay: 0.5s;
+      animation-delay: 0.2s;
     }
 
     &:nth-child(2) {
-      animation-delay: 0.7s;
+      animation-delay: 0.4s;
     }
     &:nth-child(3) {
-      animation-delay: 1.2s;
+      animation-delay: 0.6s;
     }
     &:nth-child(4) {
-      animation-delay: 1.4s;
+      animation-delay: 1s;
     }
   }
 }

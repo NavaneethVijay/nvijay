@@ -168,7 +168,13 @@
                     to="/about"
                     >about me</router-link
                   >
-                  , how can I help you?
+                  , how can I
+                  <router-link
+                    class="text-primary font-medium underline"
+                    to="/contact"
+                    >help</router-link
+                  >
+                  you?
                 </h3>
 
                 <div class="mt-5 md:mt-10">
@@ -211,16 +217,16 @@ export default {
       {
         name: 'description',
         content:
-          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript',
+          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript'
       },
-      { name: 'author', content: 'Navaneeth Vijay' },
-    ],
+      { name: 'author', content: 'Navaneeth Vijay' }
+    ]
   },
   data() {
     return {
       typedTexts: ['All', 'Some', 'Your'],
       completedTypes: [],
-      currentTyped: 0,
+      currentTyped: 0
     }
   },
   computed: {
@@ -235,7 +241,7 @@ export default {
     },
     getBodyClsoe() {
       return '</body>'
-    },
+    }
   },
   methods: {
     handleTyped() {
@@ -243,7 +249,7 @@ export default {
         this.completedTypes.push(this.typedTexts[this.currentTyped])
         this.currentTyped++
       }
-    },
-  },
+    }
+  }
 }
 </script>

@@ -127,6 +127,10 @@
               touch <br />
               then. Just drop me a line!
             </p>
+             <g-link to="/contact" class="mt-10 shadow bg-primary hover:bg-purple-900 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+                      type="button">
+                      Contact Me
+            </g-link>
           </div>
         </div>
         <div
@@ -158,10 +162,11 @@ export default {
           link: 'https://witless.netlify.app',
           bgColor: 'bg-orange-100',
           images: [
-            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c975ec5df2ed52f9c094_gallery-image-01.jpg',
-            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c9947eda2a2d7ecdd362_gallery-image-04.jpg',
-            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c9947eda2a2d7ecdd362_gallery-image-05.jpg',
-          ],
+            '/projects/witless/landing_1.png',
+            '/projects/witless/landing_2.png',
+            '/projects/witless/landing_3.png',
+            '/projects/witless/landing_4.png',
+            ],
         },
         {
           title: 'Shordyurl',
@@ -170,9 +175,9 @@ export default {
           link: 'https://shordyurl.herokuapp.com',
           bgColor: 'bg-teal-100',
           images: [
-            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c9947eda2a2d7ecdd362_gallery-image-04.jpg',
-            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c975ec5df2ed52f9c094_gallery-image-01.jpg',
-            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c9947eda2a2d7ecdd362_gallery-image-05.jpg',
+            '/projects/shordy/landing_1.png',
+            '/projects/shordy/landing_2.png',
+            '/projects/shordy/landing_3.png',
           ],
         },
       ],
@@ -185,9 +190,10 @@ export default {
           link: 'https://www.fi8healthandfitness.com',
           bgColor: 'bg-purple-100',
           images: [
-            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c33ba553da8565e5cbbf_gallery-image-05.jpg',
-            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c975ec5df2ed52f9c094_gallery-image-01.jpg',
-            'https://assets.website-files.com/5ed35623a0977f6f1d47e8d9/5ed3c9947eda2a2d7ecdd362_gallery-image-04.jpg',
+            '/projects/fi8/landing_1.png',
+            '/projects/fi8/landing_2.png',
+            '/projects/fi8/landing_3.png',
+            '/projects/fi8/landing_4.png',
           ],
         },
       ],
