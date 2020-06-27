@@ -18,14 +18,14 @@
               <div class="w-12 h-10">
                 <img src="/waving.gif" style="opacity: 1;" class="image w-12" />
               </div>
-              <h1 class=" text-3xl sm:text-5xl font-bold text-primary">
+              <h1 class=" text-2xl sm:text-5xl font-bold text-primary">
                 Hey There!
               </h1>
-              <h1 class=" text-3xl sm:text-5xl font-semibold ">
+              <h1 class=" text-2xl sm:text-5xl font-bold ">
                 I'm Navaneeth Vijay,
               </h1>
               <div class="bg-text-wrapper relative">
-                <h1 class=" text-2xl sm:text-4xl font-medium ">
+                <h1 class=" text-2xl sm:text-5xl font-medium ">
                   Full Stack Web Developer
                 </h1>
                 <div class="text-bg-accent"></div>
@@ -135,9 +135,9 @@
               </ul>
               <div class="my-6 md:my-12">
                 <h2
-                  class="text-2xl sm:text-4xl font-medium  md:flex flex-wrap md:flex-wrap "
+                  class="text-2xl sm:text-5xl font-medium flex flex-wrap md:flex-wrap "
                 >
-                  <span>I solve</span>
+                  <span class="pr-2">I solve</span>
                   <br />
 
                   <span
@@ -217,16 +217,16 @@ export default {
       {
         name: 'description',
         content:
-          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript'
+          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript',
       },
-      { name: 'author', content: 'Navaneeth Vijay' }
-    ]
+      { name: 'author', content: 'Navaneeth Vijay' },
+    ],
   },
   data() {
     return {
       typedTexts: ['All', 'Some', 'Your'],
       completedTypes: [],
-      currentTyped: 0
+      currentTyped: 0,
     }
   },
   computed: {
@@ -241,7 +241,7 @@ export default {
     },
     getBodyClsoe() {
       return '</body>'
-    }
+    },
   },
   methods: {
     handleTyped() {
@@ -249,7 +249,7 @@ export default {
         this.completedTypes.push(this.typedTexts[this.currentTyped])
         this.currentTyped++
       }
-    }
-  }
+    },
+  },
 }
 </script>

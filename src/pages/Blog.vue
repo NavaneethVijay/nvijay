@@ -1,8 +1,8 @@
 <template>
   <Layout class="bg-white">
-    <div class="min-h-screen px-6 pt-10">
+    <div class="min-h-screen pt-10">
       <div
-        class="max-w-xl md:max-w-3xl xl:max-w-4xl mx-auto text-center md:px-6 py-10 md:py-32  border-b"
+        class="max-w-xl md:max-w-3xl xl:max-w-4xl mx-auto text-center md:px-6 py-10 md:py-20  border-b"
       >
         <h1 class="text-3xl md:text-5xl font-sans font-bold mb-1">
           <g-link to="/" class="text-black">Navaneeth Vijay</g-link>
@@ -114,7 +114,7 @@
       </div>
       <section>
         <div
-          class="transition duration-500 ease-in-out md:hover:bg-purple-100 md:cursor-pointer"
+          class="transition duration-700 ease-in-out md:hover:bg-purple-100 md:cursor-pointer"
           v-for="edge in $page.posts.edges"
           :key="edge.node.id"
         >
