@@ -138,7 +138,7 @@
                   </div>
                   <div class="flex block flex-wrap items-center mt-8">
                     <div
-                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center mr-2 my-2 bg-purple-100"
+                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center m-2 md:mr-2 md:my-2 bg-purple-100"
                     >
                       <div>
                         <svg
@@ -160,7 +160,7 @@
                       </div>
                     </div>
                     <div
-                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center mr-2 my-2 bg-purple-100"
+                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
                     >
                       <div>
                         <svg
