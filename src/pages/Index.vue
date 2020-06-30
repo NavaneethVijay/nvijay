@@ -31,21 +31,19 @@
                 <div class="text-bg-accent"></div>
               </div>
               <ul class="flex text-gray-900 text-lg font-mono my-8">
-                <li class="pr-8">
+                <li class="pr-4 md:pr-8">
                   <a
                     class="hover:text-primary"
                     href="https://instagram.com/navneeth_vijay"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather feather-instagram"
+                      class="feather feather-instagram w-5 h-5 md:w-6 md:h-6"
                     >
                       <rect
                         x="2"
@@ -61,7 +59,7 @@
                       <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg
                   ></a>
                 </li>
-                <li class="pr-8">
+                <li class="pr-4 md:pr-8">
                   <a
                     class="hover:text-primary"
                     href="https://github.com/NavaneethVijay"
@@ -76,7 +74,7 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather feather-github"
+                      class="feather feather-github w-5 h-5 md:w-6 md:h-6"
                     >
                       <path
                         d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
@@ -84,7 +82,7 @@
                     </svg>
                   </a>
                 </li>
-                <li class="pr-8">
+                <li class="pr-4 md:pr-8">
                   <a
                     class="hover:text-primary"
                     href="https://twitter.com/navaneeth_V29"
@@ -99,17 +97,17 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather feather-twitter"
+                      class="feather feather-twitter w-5 h-5 md:w-6 md:h-6"
                     >
                       <path
                         d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
                       ></path></svg
                   ></a>
                 </li>
-                <li class="pr-8">
+                <li class="pr-4 md:pr-8">
                   <a
                     class="hover:text-primary"
-                    href="https://twitter.com/navaneeth_V29"
+                    href="https://codepen.io/NavaneethVijay"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +119,7 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="feather feather-codepen"
+                      class="feather feather-codepen w-5 h-5 md:w-6 md:h-6"
                     >
                       <polygon
                         points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
@@ -158,7 +156,7 @@
                   </span>
                 </h2>
                 <h3
-                  class=" text-lg md:text-2xl font-regular leading-relaxed tracking-wide mt-2"
+                  class="text-lg md:text-2xl font-regular leading-relaxed tracking-wide mt-2"
                 >
                   I'm a full stack web developer based in Bengaluru. I build
                   interactive websites that run across platforms & devices but
@@ -168,13 +166,7 @@
                     to="/about"
                     >about me</router-link
                   >
-                  , how can I
-                  <router-link
-                    class="text-primary font-medium underline"
-                    to="/contact"
-                    >help</router-link
-                  >
-                  you?
+                  , how can I help you?
                 </h3>
 
                 <div class="mt-5 md:mt-10">
@@ -217,16 +209,16 @@ export default {
       {
         name: 'description',
         content:
-          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript',
+          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript'
       },
-      { name: 'author', content: 'Navaneeth Vijay' },
-    ],
+      { name: 'author', content: 'Navaneeth Vijay' }
+    ]
   },
   data() {
     return {
       typedTexts: ['All', 'Some', 'Your'],
       completedTypes: [],
-      currentTyped: 0,
+      currentTyped: 0
     }
   },
   computed: {
@@ -241,7 +233,7 @@ export default {
     },
     getBodyClsoe() {
       return '</body>'
-    },
+    }
   },
   methods: {
     handleTyped() {
@@ -249,7 +241,7 @@ export default {
         this.completedTypes.push(this.typedTexts[this.currentTyped])
         this.currentTyped++
       }
-    },
-  },
+    }
+  }
 }
 </script>

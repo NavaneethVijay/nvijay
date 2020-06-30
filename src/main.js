@@ -5,7 +5,6 @@ import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/css/main.css'
 
 import VueTypedJs from 'vue-typed-js'
-
 export default function(Vue, { router, head, isClient }) {
   Vue.use(VueTypedJs)
   // Set default layout as a global component
@@ -13,10 +12,10 @@ export default function(Vue, { router, head, isClient }) {
   head.link.push({
     rel: 'stylesheet',
     href:
-      'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=PT+Mono&display=swap',
+      'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=PT+Mono&display=swap'
   }),
     head.link.push({
       rel: 'stylesheet',
-      href: 'https://unpkg.com/swiper/css/swiper.css',
+      href: 'https://unpkg.com/swiper/css/swiper.css'
     })
 }

@@ -86,7 +86,7 @@
             <li>
               <a
                 class="hover:text-primary"
-                href="https://twitter.com/navaneeth_V29"
+                href="https://codepen.io/NavaneethVijay"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -112,32 +112,27 @@
           </ul>
         </div>
       </div>
-      <section>
+      <section v-if="$page">
         <div
           class="transition duration-700 ease-in-out md:hover:bg-purple-100 md:cursor-pointer"
           v-for="edge in $page.posts.edges"
           :key="edge.node.id"
         >
-          <div
-            class="transition duration-500 ease-in-out flex justify-center  container mx-auto py-20 transform md:hover:translate-x-24 "
-          >
-            <div>
-              <h2 class="text-4xl font-bold mb-5">{{ edge.node.title }}</h2>
-              <p class="text-primary font-medium">{{ edge.node.date }}</p>
-              <div
-                class="text-lg mt-5 font-regular"
-                v-html="edge.node.summary"
-              ></div>
-              <div class="mt-2">
-                <a
-                  href="https://tailwindui.com/?utm_source=tailwindcss&amp;utm_medium=sidebar-widget"
-                  class="text-sm text-gray-800 font-medium hover:underline"
-                >
-                  Learn more →
-                </a>
+          <g-link :to="edge.node.path">
+            <div
+              class="transition duration-500 ease-in-out flex justify-center  container mx-auto py-20 transform md:hover:translate-x-24 "
+            >
+              <div>
+                <h2 class="text-4xl font-bold mb-5">{{ edge.node.title }}</h2>
+                <p class="text-primary font-medium">{{ edge.node.date }}</p>
+                <div
+                  class="text-lg mt-5 font-regular"
+                  v-html="edge.node.summary"
+                ></div>
+                <div class="mt-2"></div>
               </div>
             </div>
-          </div>
+          </g-link>
         </div>
       </section>
     </div>
@@ -147,11 +142,10 @@
 import VueMarkdown from 'vue-markdown'
 export default {
   components: {
-    VueMarkdown,
-  },
+    VueMarkdown
+  }
 }
 </script>
-
 <page-query>
   query {
     posts: allContentfulStory(sortBy:"publishDate" order:DESC) {
@@ -159,7 +153,8 @@ export default {
         node {
           id
           title
-          date(format: "YYYY/MM/DD")
+          path
+          date (format: "D. MMMM YYYY")
           content(html:true)
           summary(html:true)
         }

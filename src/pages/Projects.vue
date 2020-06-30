@@ -127,10 +127,14 @@
               touch <br />
               then. Just drop me a line!
             </p>
-             <g-link to="/contact" class="mt-10 shadow bg-primary hover:bg-purple-900 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-                      type="button">
-                      Contact Me
-            </g-link>
+             <div class="mt-5 md:mt-10">
+                  <span
+                    class="font-medium py-1 border-gray-900 border-b text-base text-lg"
+                    ><a href="mailto:sainavaneeth@gmail.com">
+                      sainavaneeth@gmail.com</a
+                    ></span
+                  >
+                </div>
           </div>
         </div>
         <div

@@ -335,4 +335,9 @@ header {
     transform: translate(-12px, -9px) rotate(45deg);
   }
 }
+code {
+  background: #f2f2f2;
+  padding: 4px 2px;
+  border-radius: 2px;
+}
 </style>

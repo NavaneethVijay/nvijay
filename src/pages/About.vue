@@ -34,19 +34,22 @@
           </div>
 
           <div class="my-8">
-            <h3 class="text-base md:text-xl font-regular my-4">
+            <h3 class="text-lg md:text-2xl font-regular my-4">
               I’m Navaneeth Vijay — a full stack web developer based in
-              Bengaluru. I’ve been developing for more than 3 years. While I
-              binge watch tv series and play
-              <span class="font-medium text-xl md:text-2xl"> Dota2</span> on a
-              'normal' day, I also learned latest tools and technologies which
-              allowed me to accomplish myself as a web developer.
+              Bengaluru. I’ve been developing web applications for more than 3
+              years.
             </h3>
-            <h3 class="text-base md:text-xl font-regular">
+            <h3 class="text-lg md:text-2xl font-regular my-4">
+              While I binge watch tv series and play
+              <span class="font-medium text-lg md:text-xl"> Dota2</span> on a
+              'normal' day, I also learn latest tools and technologies which
+              allowed me to accomplish myself as a developer.
+            </h3>
+            <h3 class="text-lg md:text-2xl font-regular">
               I’m a fast learner, able to pick up new skills and juggle
               different projects and roles with relative ease.
             </h3>
-            <div class="mt-8">
+            <!-- <div class="mt-8">
               <a
                 href="https://witless.netlify.app/"
                 class="text-xl font-medium text-gray-800 font-bold underline"
@@ -61,22 +64,24 @@
               >
                 Say Hi !
               </g-link>
-            </div>
+            </div> -->
           </div>
 
-          <div class="mt-20">
+          <div class="mt-10">
             <div class="pb-5 md:px-0 md:py-10">
               <h3 class="text-2xl md:text-4xl font-semibold mb-4 ">
                 Work Experience
               </h3>
               <div>
-                <h3 class="text-base md:text-xl font-regular">
+                <h3 class="text-lg md:text-2xl font-regular">
                   I've been Working as a
                   <span class="font-medium text-lg md:text-2xl">
                     Magento Frontend Developer </span
                   >in Codilar Technologies Pvt. Ltd in Bengaluru for 2 year and
-                  above with active contributations in development for more than
-                  5 projects.
+                  above with active contributations in development of more than
+                  five
+                  <span class="text-primary font-medium">e-commerce</span>
+                  projects.
                 </h3>
               </div>
             </div>
@@ -103,7 +108,7 @@
                   </div>
                 </div>
               </div>
-              <div class="md:pr-6 py-5 md:py-10 rounded ">
+              <!-- <div class="md:pr-6 py-5 md:py-10 rounded ">
                 <div class="flex items-center">
                   <div class="w-16 h-16 cover bg-gray-200 rounded-full" />
                   <div class="pl-4 relative">
@@ -121,7 +126,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
 
@@ -138,7 +143,7 @@
                   </div>
                   <div class="flex block flex-wrap items-center mt-8">
                     <div
-                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center m-2 md:mr-2 md:my-2 bg-purple-100"
+                      class="skills-box p-2 md:p-4 rounded-lg flex items-end text-center justify-center m-2 md:mr-2 md:my-2 bg-purple-100"
                     >
                       <div>
                         <svg
@@ -147,7 +152,7 @@
                           viewBox="0 0 256 303"
                           xmlns="http://www.w3.org/2000/svg"
                           preserveAspectRatio="xMidYMid"
-                          class="w-auto mx-auto h-auto block"
+                          class="w-auto mx-auto h-auto block magento"
                         >
                           <path
                             d="M144.852 90.67v172.192l-16.933 10.349-16.946-10.404V90.803l-43.878 27.016v147.255l60.824 37.217 61.339-37.482V117.725L144.852 90.67zM127.919 0L0 77.502v147.274l33.223 19.572V97.06l94.722-57.596 94.81 57.512.391.223-.042 146.929L256 224.776V77.502L127.919 0z"
@@ -160,7 +165,7 @@
                       </div>
                     </div>
                     <div
-                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
+                      class="skills-box p-2 md:p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
                     >
                       <div>
                         <svg
@@ -319,7 +324,7 @@
                       </div>
                     </div>
                     <div
-                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
+                      class="skills-box p-2 md:p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
                     >
                       <div>
                         <svg
@@ -348,7 +353,7 @@
                       </div>
                     </div>
                     <div
-                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
+                      class="skills-box p-2 md:p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
                     >
                       <div>
                         <svg
@@ -367,7 +372,7 @@
                       </div>
                     </div>
                     <div
-                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
+                      class="skills-box p-2 md:p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
                     >
                       <div>
                         <svg
@@ -386,7 +391,7 @@
                       </div>
                     </div>
                     <div
-                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
+                      class="skills-box p-2 md:p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
                     >
                       <div>
                         <svg
@@ -405,7 +410,7 @@
                       </div>
                     </div>
                     <div
-                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
+                      class="skills-box p-2 md:p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100"
                     >
                       <div>
                         <svg
@@ -427,7 +432,7 @@
                       </div>
                     </div>
                     <div
-                      class="skills-box p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100 text"
+                      class="skills-box p-2 md:p-4 rounded-lg flex items-end text-center justify-center m-2 bg-purple-100 text"
                     >
                       <div>
                         <svg
@@ -466,7 +471,7 @@
             </div>
           </div>
 
-          <div>
+          <div class="mt-10 md:mt-0">
             <div class="md:px-0 md:pt-10">
               <h3 class="text-2xl md:text-4xl font-semibold mb-4 ">
                 Education
@@ -529,16 +534,29 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Navaneeth Vijay | About',
-  },
+    title: 'Navaneeth Vijay | About'
+  }
 }
 </script>
 <style lang="scss">
 .skills-box {
   width: 120px;
   height: 120px;
+  @media (max-width: 1024px) {
+    width: calc(25% - 16px);
+    height: 80px;
+    font-size: 12px;
+    .magento {
+      @media (max-width: 1024px) {
+        width: 30%;
+      }
+    }
+  }
   svg {
     width: 50%;
+    @media (max-width: 1024px) {
+      width: 40%;
+    }
     &.nodejs {
       width: 80%;
     }

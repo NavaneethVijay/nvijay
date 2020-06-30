@@ -13,14 +13,11 @@
       <li class="pr-8 my-6 overflow-hidden">
         <router-link to="/projects">Projects</router-link>
       </li>
-      <li class="pr-8 my-6 overflow-hidden">
-        <router-link to="/contact">Contact</router-link>
-      </li>
     </ul>
   </div>
 </template>
 <script>
 export default {
-  name: 'MenuList',
+  name: 'MenuList'
 }
 </script>

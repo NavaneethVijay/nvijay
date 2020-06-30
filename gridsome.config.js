@@ -22,8 +22,11 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN, // required
         host: 'cdn.contentful.com',
         environment: 'master',
-        typeName: 'Contentful',
+        typeName: 'Contentful'
       },
+      templates: {
+        ContentfulStory: '/blog/:slug'
+      }
     },
     {
       use: 'gridsome-plugin-manifest',
@@ -33,8 +36,8 @@ module.exports = {
         name: 'NavaneethVijay',
         short_name: 'NavaneethVijay',
         theme_color: '#fff',
-        lang: 'en',
-      },
+        lang: 'en'
+      }
     },
     {
       use: 'gridsome-plugin-pwa',
@@ -52,15 +55,15 @@ module.exports = {
         backgroundColor: '#fff',
         icon: 'src/favicon.png', // must be provided like 'src/favicon.png'
         msTileImage: '',
-        msTileColor: '#fff',
-      },
-    },
+        msTileColor: '#fff'
+      }
+    }
   ],
   css: {
     loaderOptions: {
       postcss: {
-        plugins: postcssPlugins,
-      },
-    },
-  },
+        plugins: postcssPlugins
+      }
+    }
+  }
 }

@@ -91,7 +91,7 @@
               <li>
                 <a
                   class="hover:text-primary"
-                  href="https://twitter.com/navaneeth_V29"
+                  href="https://codepen.io/NavaneethVijay"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -123,6 +123,6 @@
 </template>
 <script>
 export default {
-  name: 'Footer',
+  name: 'Footer'
 }
 </script>
