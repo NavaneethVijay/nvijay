@@ -120,7 +120,7 @@
         >
           <g-link :to="edge.node.path">
             <div
-              class="transition duration-500 ease-in-out flex justify-center  container mx-auto py-20 transform md:hover:translate-x-24 "
+              class="transition duration-500 ease-in-out flex justify-center px-4  container mx-auto py-20 transform md:hover:translate-x-24 "
             >
               <div>
                 <h2 class="text-4xl font-bold mb-5">{{ edge.node.title }}</h2>

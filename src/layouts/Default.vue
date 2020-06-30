@@ -338,6 +338,10 @@ header {
 code {
   background: #f2f2f2;
   padding: 4px 2px;
+  font-size: 80% !important;
+  font-family: 'Courier New', Courier, monospace;
   border-radius: 2px;
+  white-space: pre-line;
+  overflow-wrap: break-word;
 }
 </style>
