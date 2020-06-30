@@ -38,25 +38,6 @@ module.exports = {
         theme_color: '#fff',
         lang: 'en'
       }
-    },
-    {
-      use: 'gridsome-plugin-pwa',
-      options: {
-        title: 'NavaneethVijay',
-        startUrl: '/',
-        display: 'standalone',
-        statusBarStyle: 'default',
-        manifestPath: 'manifest.json',
-        disableServiceWorker: false,
-        serviceWorkerPath: 'service-worker.js',
-        cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
-        shortName: 'NavaneethVijay',
-        themeColor: '#fff',
-        backgroundColor: '#fff',
-        icon: 'src/favicon.png', // must be provided like 'src/favicon.png'
-        msTileImage: '',
-        msTileColor: '#fff'
-      }
     }
   ],
   css: {
