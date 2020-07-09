@@ -17,7 +17,9 @@
                 <a
                   class="hover:text-primary"
                   href="https://instagram.com/navneeth_vijay"
-                  ><svg
+                >
+                  <span class="hidden">instagram</span>
+                  <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
                     height="24"
@@ -48,6 +50,7 @@
                   class="hover:text-primary"
                   href="https://github.com/NavaneethVijay"
                 >
+                  <span class="hidden">github</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -71,6 +74,7 @@
                   class="hover:text-primary"
                   href="https://twitter.com/navaneeth_V29"
                 >
+                  <span class="hidden">twitter</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -93,6 +97,7 @@
                   class="hover:text-primary"
                   href="https://codepen.io/NavaneethVijay"
                 >
+                  <span class="hidden">codepen</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -123,6 +128,6 @@
 </template>
 <script>
 export default {
-  name: 'Footer'
+  name: 'Footer',
 }
 </script>

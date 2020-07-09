@@ -16,18 +16,23 @@
           <div class="w-full md:w-3/5 relative h-inherit md:pt-20 pb-10 md:p-0">
             <div class="w-fll md:w-3/4 flex flex-col h-full justify-center">
               <div class="w-12 h-10">
-                <img src="/waving.gif" style="opacity: 1;" class="image w-12" />
+                <img
+                  src="/waving.gif"
+                  alt="hello"
+                  style="opacity: 1;"
+                  class="image w-12"
+                />
               </div>
               <h1 class=" text-2xl sm:text-5xl font-bold text-primary">
                 Hey There!
               </h1>
-              <h1 class=" text-2xl sm:text-5xl font-bold ">
+              <h2 class=" text-2xl sm:text-5xl font-bold ">
                 I'm Navaneeth Vijay,
-              </h1>
+              </h2>
               <div class="bg-text-wrapper relative">
-                <h1 class=" text-2xl sm:text-5xl font-medium ">
+                <h3 class=" text-2xl sm:text-5xl font-medium ">
                   Full Stack Web Developer
-                </h1>
+                </h3>
                 <div class="text-bg-accent"></div>
               </div>
               <ul class="flex text-gray-900 text-lg font-mono my-8">
@@ -35,7 +40,9 @@
                   <a
                     class="hover:text-primary"
                     href="https://instagram.com/navneeth_vijay"
-                    ><svg
+                  >
+                    <span class="hidden">instagram</span>
+                    <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       fill="none"
@@ -64,6 +71,7 @@
                     class="hover:text-primary"
                     href="https://github.com/NavaneethVijay"
                   >
+                    <span class="hidden">github</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -87,6 +95,7 @@
                     class="hover:text-primary"
                     href="https://twitter.com/navaneeth_V29"
                   >
+                    <span class="hidden">twitter</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -109,6 +118,7 @@
                     class="hover:text-primary"
                     href="https://codepen.io/NavaneethVijay"
                   >
+                    <span class="hidden">codepen</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -182,7 +192,7 @@
           </div>
           <div class="w-full md:w-2/5 pb-10">
             <div class="relative">
-              <img src="/navaneeth.jpg" class="hero-img" />
+              <img src="/navaneeth.jpg" alt="me" class="hero-img" />
               <div class="hero-img-backdrop"></div>
             </div>
           </div>
@@ -209,16 +219,16 @@ export default {
       {
         name: 'description',
         content:
-          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript'
+          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript',
       },
-      { name: 'author', content: 'Navaneeth Vijay' }
-    ]
+      { name: 'author', content: 'Navaneeth Vijay' },
+    ],
   },
   data() {
     return {
       typedTexts: ['All', 'Some', 'Your'],
       completedTypes: [],
-      currentTyped: 0
+      currentTyped: 0,
     }
   },
   computed: {
@@ -233,7 +243,7 @@ export default {
     },
     getBodyClsoe() {
       return '</body>'
-    }
+    },
   },
   methods: {
     handleTyped() {
@@ -241,7 +251,7 @@ export default {
         this.completedTypes.push(this.typedTexts[this.currentTyped])
         this.currentTyped++
       }
-    }
-  }
+    },
+  },
 }
 </script>
