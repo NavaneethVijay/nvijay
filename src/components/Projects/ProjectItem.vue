@@ -1,27 +1,33 @@
 <template>
-  <div>
-    <div
-      :class="project.bgColor"
-      class="full-width project-item  px-6 md:py-32 py-20"
+  <div
+      class=" project-item px-6 h-full pb-10"
     >
-      <div class="container mx-auto flex flex-wrap items-center">
-        <div class="w-full md:w-1/4">
-          <div class="text-center">
-            <h3 class="text-2xl sm:text-4xl font-bold overflow-hidden">
+      <div>
+         <div class="w-full h-full mt-10 md:mt-0 md:py-6">
+          <swiper ref="mySwiper" :options="swiperOptions">
+            <swiper-slide v-for="(image, j) in project.images" :key="j">
+              <img class="mx-auto" style="width: 100%" :src="image" />
+            </swiper-slide>
+            <div class="swiper-pagination" slot="pagination"></div>
+          </swiper>
+        </div>
+        <div class="w-full">
+          <div>
+            <h3 class="text-xl sm:text-2xl font-medium overflow-hidden mt-2">
               <span> {{ project.title }}</span>
             </h3>
-            <h3 class="mt-6 text-lg md:text-xl font-regular leading-snug">
+            <h3 class="mt-2 text-md md:text-lg text-gray-600">
               {{ project.description }}
             </h3>
-            <p class="font-mono mt-4">
+            <!-- <p class="font-mono mt-4">
               <span
                 v-for="(tag, i) in project.tags"
                 :key="i"
-                class="border text-xs border-black rounded py-1 px-2 mr-2"
+                class="border text-xs border-gray-600 text-gray-600 rounded py-1 px-2 mr-2"
                 >{{ tag }}</span
               >
-            </p>
-            <div class="mt-8">
+            </p> -->
+            <div class="mt-4">
               <a
                 :href="project.link"
                 class="text-md font-medium text-gray-800 font-medium hover:underline"
@@ -30,17 +36,9 @@
             </div>
           </div>
         </div>
-        <div class="w-full md:w-3/4 mt-20 md:mt-0 md:p-6">
-          <swiper ref="mySwiper" :options="swiperOptions">
-            <swiper-slide v-for="(image, j) in project.images" :key="j">
-              <img class="mx-auto" style="width: 100%" :src="image" />
-            </swiper-slide>
-            <div class="swiper-pagination" slot="pagination"></div>
-          </swiper>
-        </div>
+      
       </div>
     </div>
-  </div>
 </template>
 <script>
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'

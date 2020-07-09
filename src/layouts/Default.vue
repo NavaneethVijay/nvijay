@@ -53,6 +53,9 @@ query {
 }
 </static-query>
 <style lang="scss">
+.layout{
+  color: #1a202c;
+}
 @font-face {
   font-family: PlusJakartaDisplay;
   src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Bold.ttf');

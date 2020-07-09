@@ -11,13 +11,13 @@
           <span class="pl-6" v-text="`&lt;body&gt;`"> </span>
         </div>
         <div class="py-8">
-          <div class="py-10 px-4 relative">
+          <div class="pt-5 pb-5 md:py-10 px-4 relative">
             <div class="hidden md:block powers-img-backdrop-left"></div>
             <div class="flex items-center md:pt-10">
               <div>
                 <div class="bg-text-wrapper relative">
                   <h1
-                    class="text-3xl sm:text-5xl md:text-6xl font-bold tracking-wide"
+                    class="text-3xl sm:text-4xl md:text-5xl font-bold tracking-wide"
                   >
                     Successful Missions
                   </h1>
@@ -30,26 +30,22 @@
             </div>
           </div>
           <div class="pb-20">
-            <div class="project-wrapper my-5 md:my-10">
-              <div class="pb-5 px-4 md:py-10">
-                <h3
-                  class="hidden text-2xl md:text-3xl text-gray-900 font-bold "
-                >
-                  Open source projects
-                </h3>
+            <div class="project-wrapper md:my-10">
+              <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2" v-for="(project, index) in projects" :key="index">
+                  <ProjectItem :project="project" />
+                </div>
               </div>
-              <div v-for="(project, index) in projects" :key="index">
-                <ProjectItem :project="project" />
-              </div>
+              
               <div>
                 <div class="pt-10 md:pt-20 pb-10 px-4">
                   <h4
-                    class="text-xl md:text-3xl mt-2 text-gray-900 font-medium "
+                    class="text-lg md:text-2xl pl-2 md:pl-0 mt-2 text-gray-900 font-medium "
                   >
-                    Other libraries <a href="https://github.com/NavaneethVijay" class="ml-4 text-xl underline text-primary">Find More</a>
+                    Other things which I've made <a href="https://github.com/NavaneethVijay" class="underline text-primary ml-1">Find More</a>
                   </h4>
                 </div>
-                <div class="flex flex-wrap">
+                <div class="flex flex-wrap px-4 md:px-0">
                   <div class="w-full md:w-1/3">
                     <div
                       class=" p-6 mx-2 md:mr-2 mb-2 border rounded-lg md:h-full transition duration-500 ease-in-out hover:shadow-md relative"
@@ -102,13 +98,6 @@
                 </div>
 
                 <div class="mt-10 md:mt-20">
-                  <div class="pb-5 px-4 md:py-10">
-                    <h3
-                      class="hidden text-2xl md:text-3xl text-gray-900 font-bold "
-                    >
-                      Client Projects
-                    </h3>
-                  </div>
                   <div v-for="(project, index) in clientProjects" :key="index">
                     <ProjectItem :project="project" />
                   </div>
@@ -116,26 +105,7 @@
               </div>
             </div>
           </div>
-          <div class="mb-20 text-center relative">
-            <div class="powers-img-backdrop-left"></div>
-            <h3 class="text-4xl md:text-6xl mb-5 px-4 font-bold">
-              That’s it! Now it’s <br />
-              your turn to say hi.
-            </h3>
-            <p class="text-xl md:text-3xl text-regular text-gray-800 px-4">
-              Do you want to work together or talk about an idea? Let's get in
-              touch <br />
-              then. Just drop me a line!
-            </p>
-             <div class="mt-5 md:mt-10">
-                  <span
-                    class="font-medium py-1 border-gray-900 border-b text-base text-lg"
-                    ><a href="mailto:sainavaneeth@gmail.com">
-                      sainavaneeth@gmail.com</a
-                    ></span
-                  >
-                </div>
-          </div>
+        
         </div>
         <div
           class="absolute text-gray-600 bottom-0 left-0 text-base font-htmlCodes pl-4"
@@ -167,9 +137,6 @@ export default {
           bgColor: 'bg-orange-100',
           images: [
             '/projects/witless/landing_1.png',
-            '/projects/witless/landing_2.png',
-            '/projects/witless/landing_3.png',
-            '/projects/witless/landing_4.png',
             ],
         },
         {
@@ -180,8 +147,6 @@ export default {
           bgColor: 'bg-teal-100',
           images: [
             '/projects/shordy/landing_1.png',
-            '/projects/shordy/landing_2.png',
-            '/projects/shordy/landing_3.png',
           ],
         },
       ],
@@ -195,9 +160,6 @@ export default {
           bgColor: 'bg-purple-100',
           images: [
             '/projects/fi8/landing_1.png',
-            '/projects/fi8/landing_2.png',
-            '/projects/fi8/landing_3.png',
-            '/projects/fi8/landing_4.png',
           ],
         },
       ],

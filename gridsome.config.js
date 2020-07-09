@@ -16,6 +16,12 @@ module.exports = {
   siteName: 'NavaneethVijay',
   plugins: [
     {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-170902890-1'
+      }
+    },
+    {
       use: '@gridsome/source-contentful',
       options: {
         space: process.env.CONTENTFUL_SPACE, // required

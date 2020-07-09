@@ -11,7 +11,7 @@
         <router-link to="/blog">Blog</router-link>
       </li>
       <li class="pr-8 my-6 overflow-hidden">
-        <router-link to="/projects">Projects</router-link>
+        <router-link to="/projects">Open Source</router-link>
       </li>
     </ul>
   </div>
