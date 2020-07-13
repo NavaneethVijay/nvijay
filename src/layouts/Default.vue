@@ -165,13 +165,10 @@ query {
     }
 
     &:nth-child(2) {
-      animation-delay: 0.4s;
+      animation-delay: 0.3s;
     }
     &:nth-child(3) {
-      animation-delay: 0.6s;
-    }
-    &:nth-child(4) {
-      animation-delay: 1s;
+      animation-delay: 0.4s;
     }
   }
 }

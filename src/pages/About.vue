@@ -110,7 +110,7 @@
 
               <div class="w-full md:w-2/5 md:pb-10">
                 <div class="relative">
-                  <img src="/navaneeth.jpg" class="hero-img-about" />
+                  <img src="/navaneeth.jpg" class="hero-img-about md:mx-auto" />
                 </div>
               </div>
             </div>

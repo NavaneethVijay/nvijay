@@ -35,9 +35,6 @@
     <div>
       <div :class="{ showMenu: showMenu, hideMenu: closeMenu }">
         <div
-          class="h-screen overflow-hidden bg-primary fixed top-0 w-full menu-slide"
-        ></div>
-        <div
           class="h-screen overflow-hidden bg-purple-200 fixed top-0 w-full menu-slide"
         ></div>
         <div
