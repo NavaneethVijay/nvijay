@@ -39,9 +39,6 @@
                   a 'normal' day, I also learn latest tools and technologies
                   which allowed me to accomplish myself as a developer.
                 </h3>
-                <div class="w-64 h-56">
-                  <codersrank-widget username="navaneethvijay" layout="vertical" badges="2"></codersrank-widget>
-                </div>
                 <div>
                   <ul class="mt-8">
                     <li class="mb-4">

@@ -13,15 +13,5 @@ export default function ( Vue, { router, head, isClient } ) {
     rel: 'stylesheet',
     href:
       'https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=PT+Mono&display=swap'
-  } ),
-
-    head.link.push( {
-      rel: 'stylesheet',
-      href: 'https://unpkg.com/swiper/css/swiper.css'
-    } ),
-
-    head.script.push( {
-      src: 'https://profile.codersrank.io/widget/widget.js',
-      body: true
-    } )
+  } )
 }
