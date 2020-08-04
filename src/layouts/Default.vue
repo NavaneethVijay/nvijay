@@ -12,37 +12,38 @@
   </div>
 </template>
 <script>
-import Footer from '@/components/Footer'
-import Header from '@/components/Header'
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 export default {
   components: {
     Footer,
-    Header
+    Header,
   },
 
   metaInfo: {
     meta: [
       {
-        property: 'og:title',
+        property: "og:title",
         content:
-          'Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript'
+          "Navaneeth Vijay, Web developer based in Bengaluru specialising in Responsive Websites using HTML5, CSS3, SVG, Creative JavaScript",
       },
       {
-        property: 'og:type',
-        content: 'website'
+        property: "og:type",
+        content: "website",
       },
       {
-        property: 'og:site_name',
-        content: 'Front-End Developer, Bengaluru India. www.navaneethvijay.com.'
+        property: "og:site_name",
+        content:
+          "Front-End Developer, Bengaluru India. www.navaneethvijay.com.",
       },
       {
-        property: 'og:url',
-        content: 'www.navaneethvijay.com'
-      }
-    ]
+        property: "og:url",
+        content: "www.navaneethvijay.com",
+      },
+    ],
     // etc...
-  }
-}
+  },
+};
 </script>
 
 <static-query>
@@ -53,30 +54,30 @@ query {
 }
 </static-query>
 <style lang="scss">
-.layout{
-  color: #1a202c;
+.layout {
+  color: #000;
 }
 @font-face {
   font-family: PlusJakartaDisplay;
-  src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Bold.ttf');
+  src: url("../assets/fonts/jakarta/PlusJakartaDisplay-Bold.ttf");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: PlusJakartaDisplay;
-  src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Medium.ttf');
+  src: url("../assets/fonts/jakarta/PlusJakartaDisplay-Medium.ttf");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: PlusJakartaDisplay;
-  src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Regular.ttf');
+  src: url("../assets/fonts/jakarta/PlusJakartaDisplay-Regular.ttf");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: PlusJakartaDisplay;
-  src: url('../assets/fonts/jakarta/PlusJakartaDisplay-Light.ttf');
+  src: url("../assets/fonts/jakarta/PlusJakartaDisplay-Light.ttf");
   font-weight: 300;
   font-display: swap;
 }
@@ -222,7 +223,8 @@ header {
 }
 
 .hero-side-bg {
-  background-color: #36117e;
+  background-image: url("https://assets.website-files.com/5d419732b8b3b47636fc4c66/5d41adf5f65670135f80e148_Pattern%20Dot.svg");
+  opacity: 0.3;
 }
 .h-inherit {
   height: inherit;
@@ -244,7 +246,7 @@ header {
   bottom: -80px;
   z-index: 0;
   display: block;
-  background-image: url('https://assets.website-files.com/5d419732b8b3b47636fc4c66/5d41adf5f65670135f80e148_Pattern%20Dot.svg');
+  background-image: url("https://assets.website-files.com/5d419732b8b3b47636fc4c66/5d41adf5f65670135f80e148_Pattern%20Dot.svg");
   background-position: 0% 0%;
   background-size: 20px;
   opacity: 0.3;
@@ -261,7 +263,7 @@ header {
   position: absolute;
   left: 0;
   top: 25%;
-  background-image: url('https://assets.website-files.com/5d419732b8b3b47636fc4c66/5d41adf5f65670135f80e148_Pattern%20Dot.svg');
+  background-image: url("https://assets.website-files.com/5d419732b8b3b47636fc4c66/5d41adf5f65670135f80e148_Pattern%20Dot.svg");
   width: 10%;
   height: 20%;
   opacity: 0.3;
@@ -270,7 +272,7 @@ header {
   position: absolute;
   right: 0;
   bottom: 25%;
-  background-image: url('https://assets.website-files.com/5d419732b8b3b47636fc4c66/5d41adf5f65670135f80e148_Pattern%20Dot.svg');
+  background-image: url("https://assets.website-files.com/5d419732b8b3b47636fc4c66/5d41adf5f65670135f80e148_Pattern%20Dot.svg");
   width: 30%;
   height: 30%;
   opacity: 0.3;
@@ -339,7 +341,7 @@ code {
   background: #f2f2f2;
   padding: 4px 2px;
   font-size: 80% !important;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   border-radius: 2px;
   white-space: pre-line;
   overflow-wrap: break-word;

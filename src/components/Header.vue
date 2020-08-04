@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="container mx-auto relative fixed top-0">
-      <header class="px-6 md:px-0 py-6 header flex justify-between w-full ">
+      <header class="px-6 md:px-0 py-6 header flex justify-between w-full">
         <div>
-          <router-link class="font-bold text-xl" to="/">NV.</router-link>
+          <router-link class="font-bold text-black text-xl" to="/">NV.</router-link>
         </div>
 
         <div class="menu-icon relative">
@@ -34,14 +34,10 @@
     </div>
     <div>
       <div :class="{ showMenu: showMenu, hideMenu: closeMenu }">
+        <div class="h-screen overflow-hidden bg-purple-200 fixed top-0 w-full menu-slide"></div>
+        <div class="h-screen overflow-hidden bg-purple-100 fixed top-0 w-full menu-slide"></div>
         <div
-          class="h-screen overflow-hidden bg-purple-200 fixed top-0 w-full menu-slide"
-        ></div>
-        <div
-          class="h-screen overflow-hidden bg-purple-100 fixed top-0 w-full menu-slide"
-        ></div>
-        <div
-          class="h-screen overflow-hidden bg-white fixed top-0 w-full menu-slide flex items-center justify-center text-primary"
+          class="h-screen overflow-hidden bg-black fixed top-0 w-full menu-slide flex items-center justify-center text-primary"
         >
           <div class="container mx-auto">
             <MenuList />
@@ -52,18 +48,18 @@
   </div>
 </template>
 <script>
-import MenuList from '@/components/MenuList'
+import MenuList from "@/components/MenuList";
 
 export default {
-  name: 'Header',
+  name: "Header",
   data() {
     return {
       showMenu: false,
       closeMenu: false,
-    }
+    };
   },
   components: {
     MenuList,
   },
-}
+};
 </script>
