@@ -34,32 +34,32 @@
 		C438.536,184.851,428.728,148.168,409.132,114.573z"
         />
       </g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
-      <g></g>
+      <g />
+      <g />
+      <g />
+      <g />
+      <g />
+      <g />
+      <g />
+      <g />
+      <g />
+      <g />
+      <g />
+      <g />
+      <g />
+      <g />
+      <g />
     </svg>
   </div>
 </template>
 <script>
 export default {
-  name: 'Github',
+  name: "Github",
   props: {
-    className: {
+    cNames: {
       type: String,
-      default: 'w-4 h-4',
+      default: "w-4 h-4",
     },
   },
-}
+};
 </script>
