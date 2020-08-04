@@ -1,10 +1,10 @@
 <template>
   <div class="project-item px-6 h-full pb-10">
     <div>
-      <div class="w-full h-full mt-10 md:mt-0 md:py-6">
+      <div class="w-full h-full mt-4 md:mt-0 md:py-6">
         <swiper ref="mySwiper" :options="swiperOptions">
           <swiper-slide v-for="(image, j) in project.images" :key="j">
-            <img class="mx-auto rounded-lg" style="width: 100%" :src="image" />
+            <g-image class="mx-auto rounded-lg" style="width: 100%" :src="image" />
           </swiper-slide>
           <div class="swiper-pagination" slot="pagination"></div>
         </swiper>

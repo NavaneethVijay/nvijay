@@ -25,9 +25,9 @@
             </div>
           </div>
           <div class="pb-20">
-            <div class="project-wrapper md:my-10">
+            <div class="project-wrapper my-10">
               <div class="px-6 flex items-center">
-                <div class="uppercase text-gray-600 mr-4">self-made work</div>
+                <div class="uppercase text-sm text-gray-600 mr-4">self-made work</div>
                 <div class="border border-gray-400 w-full flex-1"></div>
               </div>
               <div class="flex flex-wrap">
@@ -38,7 +38,7 @@
 
               <div>
                 <div class="pt-10 md:pt-20 pb-10 px-4">
-                  <h3 class="flex items-center text-lg md:text-3xl font-medium">
+                  <h3 class="flex items-center text-xl sm:text-2xl font-medium">
                     Open Source
                     <div class="flex ml3 pulse">
                       <svg
@@ -46,8 +46,8 @@
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
                         fill="red"
-                        height="60"
-                        width="60"
+                        height="30"
+                        width="30"
                         stroke="currentColor"
                         stroke-width="0"
                         stroke-linejoin="round"
@@ -61,7 +61,7 @@
                     </div>
                   </h3>
                   <h4
-                    class="text-xl pl-2 md:pl-0 mt-2 text-gray-800 font-regular w-full md:w-1/2"
+                    class="text-md md:text-lg pl-2 md:pl-0 mt-2 text-gray-800 font-regular w-full md:w-1/2"
                   >We all love open source. Giving back to the community in any way is rewarding. Here are a couple of useful tools I've built and released</h4>
                 </div>
                 <div class="flex flex-wrap px-4 md:px-0">
@@ -73,14 +73,30 @@
                         <Github class="w-20 h-20 opacity-25" />
                       </div>
                       <h3 class="font-bold text-lg">Full Array Search</h3>
-                      <p class="text-md mt-2">
+                      <p class="text-lg mt-2 leading-relaxed">
                         Javascript utility that allows for searching strings in
                         an array based on indexing
                       </p>
                       <a
                         href="https://github.com/NavaneethVijay/fullarray-search"
-                        class="text-sm font-medium text-gray-800 font-medium hover:underline mt-2 block"
-                      >Explore on GitHub →</a>
+                        class="text-base font-medium text-gray-800 hover:underline mt-6 block"
+                      >
+                        Explore on GitHub
+                        <svg
+                          class="icon inline-block"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          height="25"
+                          width="25"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        >
+                          <path stroke="currentColor" d="M5 12h14m0 0l-6-6m6 6l-6 6" />
+                        </svg>
+                      </a>
                     </div>
                   </div>
                   <div class="w-full md:w-1/3">
@@ -91,12 +107,28 @@
                         <Github class="w-20 h-20 opacity-25" />
                       </div>
                       <h3 class="font-bold text-lg">Frozen Cookies</h3>
-                      <p class="text-md mt-2">
+                      <p class="text-lg mt-2 leading-relaxed">
                         Simple Javascript API for handling browser cookies
                         <a
                           href="https://github.com/NavaneethVijay/frozen-cookies"
-                          class="text-sm font-medium text-gray-800 font-medium hover:underline mt-2 block"
-                        >Explore on GitHub →</a>
+                          class="text-base font-medium text-gray-800 hover:underline mt-6 block"
+                        >
+                          Explore on GitHub
+                          <svg
+                            class="icon inline-block"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            height="25"
+                            width="25"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linejoin="round"
+                            stroke-linecap="round"
+                          >
+                            <path stroke="currentColor" d="M5 12h14m0 0l-6-6m6 6l-6 6" />
+                          </svg>
+                        </a>
                       </p>
                     </div>
                   </div>
@@ -108,11 +140,29 @@
                         <Github class="w-20 h-20 opacity-25" />
                       </div>
                       <h3 class="font-bold text-lg">Voute Maker</h3>
-                      <p class="text-md mt-2">YourQuote like image generator using nodejs</p>
+                      <p
+                        class="text-lg mt-2 leading-relaxed"
+                      >YourQuote like image generator using nodejs</p>
                       <a
                         href="https://github.com/NavaneethVijay/fullarray-search"
-                        class="text-sm font-medium text-gray-800 font-medium hover:underline mt-2 block"
-                      >Explore on GitHub →</a>
+                        class="text-base font-medium text-gray-800 hover:underline mt-6 block"
+                      >
+                        Explore on GitHub
+                        <svg
+                          class="icon inline-block"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          height="25"
+                          width="25"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linejoin="round"
+                          stroke-linecap="round"
+                        >
+                          <path stroke="currentColor" d="M5 12h14m0 0l-6-6m6 6l-6 6" />
+                        </svg>
+                      </a>
                     </div>
                   </div>
                 </div>
