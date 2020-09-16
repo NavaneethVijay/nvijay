@@ -19,8 +19,7 @@
             </li>
             <li>
               <p
-                href="#"
-                class="text-gray-500 truncate block w-3/4"
+                class="text-gray-500 max-w-xs md:max-w-6xl truncate block overflow-hidden w-3/4"
                 aria-current="page"
               >
                 {{ $page.post.title }}
@@ -91,7 +90,17 @@
 export default {
   metaInfo() {
     return {
-      title: this.$page ? this.$page.post.title : 'Navaneeth Vijay'
+      title: this.$page ? this.$page.post.title : 'Navaneeth Vijay',
+      meta: [
+      {
+        name: 'author',
+        content: 'Navaneeth Vijay'
+      },
+      {
+        name: 'description',
+        content: this.$page ? this.$page.post.summary.replace(/<[^>]*>?/gm, '') : ''
+      }
+    ],
     }
   }
 }
