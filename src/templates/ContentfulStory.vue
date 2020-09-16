@@ -88,16 +88,21 @@
 
 <script>
 export default {
-    metaInfo: {
-    title: this.$page ? this.$page.post.title : 'Navaneeth Vijay',
-    meta: [
+  metaInfo() {
+    return {
+      title: this.$page ? this.$page.post.title : 'Navaneeth Vijay',
+      meta: [
       {
-        name: "description",
-        content: this.$page ? this.$page.post.summary.replace(/<[^>]*>?/gm, '') : ''
+        name: 'author',
+        content: 'Navaneeth Vijay'
       },
-      { name: "author", content: "Navaneeth Vijay" },
+      {
+        name: 'description',
+        content: this.$page ? this.$page.post.summary.replace(/<[^>]*>?/gm, '') : ''
+      }
     ],
-  },
+    }
+  }
 }
 </script>
 <style lang="scss">
