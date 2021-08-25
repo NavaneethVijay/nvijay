@@ -1,30 +1,67 @@
 <template>
   <div>
-    <footer class="bg-gray-100 border-t py-5">
-      <div class="container mx-auto">
-        <div class="flex flex-wrap flex-col justify-center md:justify-between items-center">
-          <div class="text-center">
-            <span class="block font-bold text-lg md:text-xl">Navaneeth Vijay</span>
-            <span class="block text-xs">Copyright © 2020 Navaneeth Vijay.</span>
+    <footer class="bg-black text-white border-t px-4 py-5">
+      <div class="container mx-auto pt-16 md:pt-20">
+        <div class="pb-16 md:pb-20">
+          <h5 class="text-4xl md:text-5xl font-semibold">
+            Ready to make something kickass?
+          </h5>
+          <h5 class="text-4xl md:text-5xl mt-4 font-semibold">Let's get on a call.</h5>
+           <div
+              class="
+                py-1
+                mt-4
+                inline-block
+                border-gray-400 border-b
+                text-sm
+                text-gray-200
+                hover:text-white
+                md:text-lg
 
-            <span class="block font-medium mt-2 text-base">
-              Made using
-              <a
-                class="text-primary underline"
-                target="_blank"
-                href="https://gridsome.org/"
-              >Gridsome</a> and
-              <a
-                class="text-primary underline"
-                target="_blank"
-                href="https://tailwindcss.com/"
-              >TailwindCss</a>
-            </span>
+              "
+            >
+              <a href="mailto:sainavaneeth@gmail.com">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="feather feather-send inline-block mr-2"
+                >
+                  <line x1="22" y1="2" x2="11" y2="13" />
+                  <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                </svg>
+                sainavaneeth@gmail.com
+              </a>
+            </div>
+        </div>
+        <div
+          class="
+            flex flex-wrap flex-col
+            justify-center
+            md:justify-between
+            items-start
+          "
+        >
+          <div class="text-left w-full">
+            <span class="block font-bold text-lg md:text-3xl"
+              >Navaneeth Vijay</span
+            >
+            <span class="block">Bengaluru, Karnataka. </span>
+
           </div>
-          <div>
-            <ul class="flex text-gray-900 text-lg font-mono mt-8">
+          <div class="hidden">
+            <ul class="flex text-white text-lg font-mono mt-3">
               <li class="pr-8">
-                <a class="hover:text-primary" href="https://instagram.com/navneeth_vijay">
+                <a
+                  class="hover:text-gray-500"
+                  href="https://instagram.com/navneeth_vijay"
+                >
                   <span class="hidden">instagram</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +82,10 @@
                 </a>
               </li>
               <li class="pr-8">
-                <a class="hover:text-primary" href="https://github.com/NavaneethVijay">
+                <a
+                  class="hover:text-gray-500"
+                  href="https://github.com/NavaneethVijay"
+                >
                   <span class="hidden">github</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +106,10 @@
                 </a>
               </li>
               <li class="pr-8">
-                <a class="hover:text-primary" href="https://twitter.com/navaneeth_V29">
+                <a
+                  class="hover:text-gray-500"
+                  href="https://twitter.com/navaneeth_V29"
+                >
                   <span class="hidden">twitter</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +130,10 @@
                 </a>
               </li>
               <li>
-                <a class="hover:text-primary" href="https://codepen.io/NavaneethVijay">
+                <a
+                  class="hover:text-gray-500"
+                  href="https://codepen.io/NavaneethVijay"
+                >
                   <span class="hidden">codepen</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -101,7 +147,9 @@
                     stroke-linejoin="round"
                     class="feather feather-codepen"
                   >
-                    <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+                    <polygon
+                      points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"
+                    />
                     <line x1="12" y1="22" x2="12" y2="15.5" />
                     <polyline points="22 8.5 12 15.5 2 8.5" />
                     <polyline points="2 15.5 12 8.5 22 15.5" />
@@ -110,6 +158,28 @@
                 </a>
               </li>
             </ul>
+          </div>
+          <div class="mt-10 pt-5 pb-5 border-t border-gray-400 text-center w-full">
+            <span class="block font-medium mt-2 text-base">
+              Made using
+              <a
+                class="text-gray-400 underline"
+                target="_blank"
+                href="https://gridsome.org/"
+                >Gridsome</a
+              >
+              and
+              <a
+                class="text-gray-400 underline"
+                target="_blank"
+                href="https://tailwindcss.com/"
+                >TailwindCss</a
+              >
+            </span>
+
+            <span class="block text-xs mt-2"
+              >Copyright © 2020 Navaneeth Vijay.</span
+            >
           </div>
         </div>
       </div>

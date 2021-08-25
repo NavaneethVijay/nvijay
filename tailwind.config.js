@@ -20,6 +20,11 @@ module.exports = {
       },
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      backgroundColor: ['group-hover'],
+      transform: ['group-hover'],
+    }
+  },
   plugins: [],
 }

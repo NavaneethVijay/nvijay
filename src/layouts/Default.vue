@@ -154,7 +154,7 @@ query {
 .showMenu {
   .menu-slide {
     animation-name: slideInto;
-    animation-duration: 0.5s;
+    animation-duration: 0.8s;
     animation-delay: 0.2s;
     animation-fill-mode: forwards;
     visibility: visible;
@@ -162,14 +162,14 @@ query {
     z-index: 2;
 
     &:nth-child(1) {
-      animation-delay: 0.2s;
+      animation-delay: 0.4s;
     }
 
     &:nth-child(2) {
-      animation-delay: 0.3s;
+      animation-delay: 0.6s;
     }
     &:nth-child(3) {
-      animation-delay: 0.4s;
+      animation-delay: 0.8s;
     }
   }
 }
