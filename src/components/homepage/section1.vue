@@ -6,7 +6,7 @@
           absolute
           text-gray-600
           top-0
-          md:top-15
+          md:top-20
           left-0
           text-base
           font-htmlCodes
@@ -20,7 +20,17 @@
         class="flex pb-20 flex-wrap md:flex-no-wrap items-stretch pt-10 md:pt-0"
       >
         <div class="w-full relative h-inherit md:pt-20 md:pb-10 md:p-0">
-          <div class="w-full md:w-3/4 flex flex-col h-full justify-center">
+          <div
+            class="
+              w-full
+              md:w-3/4
+              flex flex-col
+              h-full
+              justify-center
+              mt-4
+              md:mt-0
+            "
+          >
             <div class="w-12 h-10">
               <img
                 src="/waving.gif"
@@ -31,26 +41,27 @@
             </div>
             <h1
               class="
-                text-xl
+                text-2xl
                 md:text-3xl
                 text-gray-800
-                md:font-medium
+                font-medium
                 leading-10
                 tracking-wide
-                mt-4
+                md:mt-4
                 md:w-3/4
               "
             >
-              Hey there!, I'm Navaneeth Vijay
+              Hey there!,
+              <div class="bg-text-wrapper inline-block relative">
+                <span> I'm Navaneeth Vijay </span>
+                <div class="text-bg-accent"></div>
+              </div>
             </h1>
             <div class="mb-6 mt-2 md:mt-0">
               <h2 class="text-4xl sm:text-6xl font-bold md:flex md:flex-wrap">
                 <span class="pr-2">I solve</span>
-                <br />
-
-                <span
-                  class="pr-2 md:px-2 lowercase text-primary flex items-center"
-                >
+                <span class="pr-2 md:px-2 lowercase text-primary">
+                  your
                   <!-- <vue-typed-js
                           class="flex"
                           @onStringTyped="handleTyped"
@@ -63,7 +74,7 @@
                         >
                           <h1 class="typing"></h1>
                         </vue-typed-js> -->
-                  <span class="text-black pl-2">problems</span>
+                  <span class="text-black">problems</span>
                 </span>
               </h2>
             </div>
@@ -243,7 +254,7 @@
 
 <script>
 export default {
-     computed: {
+  computed: {
     getHtml() {
       return "<html>";
     },
