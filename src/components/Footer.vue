@@ -6,7 +6,11 @@
           <h5 class="text-4xl md:text-5xl font-semibold">
             Ready to make something kickass?
           </h5>
-          <h5 class="text-4xl md:text-5xl mt-4 font-semibold">Let's get on a call.</h5>
+          <h5 class="text-4xl md:text-5xl mt-4 font-semibold text-transparent
+              bg-clip-text bg-gradient-to-l
+              from-red-400
+              via-pink-500
+              to-indigo-500 pb-2">Let's get on a call.</h5>
            <div
               class="
                 py-1

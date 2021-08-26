@@ -4,9 +4,7 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/css/main.css'
 
-import VueTypedJs from 'vue-typed-js'
 export default function ( Vue, { router, head, isClient } ) {
-  Vue.use( VueTypedJs )
   // Set default layout as a global component
   Vue.component( 'Layout', DefaultLayout )
   head.link.push( {

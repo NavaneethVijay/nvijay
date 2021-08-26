@@ -19,8 +19,7 @@
     "swiper": "^5.4.5",
     "tailwindcss": "^2.2.7",
     "vue-awesome-swiper": "^4.1.1",
-    "vue-markdown": "^2.2.4",
-    "vue-typed-js": "^0.1.2"
+    "vue-markdown": "^2.2.4"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.2.0",
